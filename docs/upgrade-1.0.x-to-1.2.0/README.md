@@ -19,7 +19,7 @@ If you do not have any records, or existing data, that you need to save you can 
 
 In these steps will we simply remove fields that will be modified by the upgrade. 
 
-1. In FortiSOAR, as an Administrator, navigate to `System Settings` and `Modules`
+1. In FortiSOAR, as an Administrator, navigate to `System Settings` and `Modules`.
 2. Select the following `Modules` and delete the respective fields listed below. Click Save when you delete the fields but **do not click** `Publish All Modules` yet. 
   - **Devices**:
     - `Source Data`
