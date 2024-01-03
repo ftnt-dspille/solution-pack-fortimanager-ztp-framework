@@ -43,5 +43,5 @@ In these steps will we simply remove fields that will be modified by the upgrade
 If you performed the steps in `Pre-Steps Steps to Preserve Existing Records` and `Pre-Steps before Upgrade to 1.2.0+` you should now be upgraded and ready to restore your record data. 
 
 1. In FortiSOAR, as an Administrator, navigate to `System Settings` and `Import Wizard`.
-2. Click the `Import from File` button and upload the file downloaded from the `ZTPF-Export-Records` Template. 
+2. Click the `Import from File` button and upload the file you downloaded from the `ZTPF-Export-Records` Template. 
 3. Leave settings as default, `Overwrite if Record Exists`, and confirm records were imported ok. 
