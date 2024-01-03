@@ -22,19 +22,19 @@ In these steps will we simply remove fields that will be modified by the upgrade
 1. In FortiSOAR, as an Administrator, navigate to `System Settings` and `Modules`
 2. Select the following `Modules` and delete the respective fields listed below. Click Save when you delete the fields but **do not click** `Publish All Modules` yet. 
   - **Devices**:
-    - Source Data
-    - Device Metadata
+    - `Source Data`
+    - `Device Metadata`
   - **Manager**:
-    - Manager Metadata
-    - Source Data
+    - `Manager Metadata`
+    - `Source Data
   - **Metafield Template**:
-    - Metadata Sources
+    - `Metadata Sources`
   - **Script**:
-    -Metadata Sources
+    - `Metadata Sources`
   - **ZTP Profile**:
-    - Assignment Search Metadata Sources
-    - ZTP Step Map
-    - Device Metadata Monitor Regex
+    - `Assignment Search Metadata Sources`
+    - `ZTP Step Map`
+    - `Device Metadata Monitor Regex`
 3. Now click `Publish All Modules` to remove the fields. Wait for the system to recover. 
 4. Perform the upgrade of the Solution Pack from the `Connectors` and `Content Hub`.
 
