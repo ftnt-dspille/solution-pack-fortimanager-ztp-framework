@@ -734,7 +734,8 @@
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761
+                "maxlength": 10485761,
+                "_enableRange": false
             },
             "bulkAction": {
                 "allow": false,
@@ -744,8 +745,27 @@
             },
             "dataSourceFilters": null,
             "defaultValue": null,
-            "tooltip": null,
-            "visibility": true,
+            "tooltip": "Leverage Metadata sources for Jinja Variables. See Usage Docs for examples.",
+            "visibility": [
+                {
+                    "sort": [],
+                    "limit": 30,
+                    "logic": "AND",
+                    "filters": [
+                        {
+                            "field": "assignmentSearchType",
+                            "operator": "eq",
+                            "value": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
+                            "_value": {
+                                "display": "Jinja",
+                                "itemValue": "Jinja",
+                                "@id": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed"
+                            },
+                            "type": "object"
+                        }
+                    ]
+                }
+            ],
             "htmlEscape": false,
             "orphanRemoval": null,
             "readable": true,
@@ -968,7 +988,8 @@
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761
+                "maxlength": 10485761,
+                "_enableRange": false
             },
             "bulkAction": {
                 "allow": false,
@@ -978,8 +999,27 @@
             },
             "dataSourceFilters": null,
             "defaultValue": null,
-            "tooltip": null,
-            "visibility": true,
+            "tooltip": "Mapping of Steps through the ZTP Phases. See Usage Docs for examples.",
+            "visibility": [
+                {
+                    "sort": [],
+                    "limit": 30,
+                    "logic": "AND",
+                    "filters": [
+                        {
+                            "field": "profileMode",
+                            "operator": "neq",
+                            "value": "\/api\/3\/picklists\/2f319930-ea3f-46c5-8b4f-6af67736ef1b",
+                            "_value": {
+                                "display": "Manual",
+                                "itemValue": "Manual",
+                                "@id": "\/api\/3\/picklists\/2f319930-ea3f-46c5-8b4f-6af67736ef1b"
+                            },
+                            "type": "object"
+                        }
+                    ]
+                }
+            ],
             "htmlEscape": false,
             "orphanRemoval": null,
             "readable": true,
@@ -1746,7 +1786,8 @@
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761
+                "maxlength": 10485761,
+                "_enableRange": false
             },
             "bulkAction": {
                 "allow": false,
@@ -1756,7 +1797,7 @@
             },
             "dataSourceFilters": null,
             "defaultValue": null,
-            "tooltip": null,
+            "tooltip": "Create a metafield with a regex requirement as the value.",
             "visibility": true,
             "htmlEscape": false,
             "orphanRemoval": null,

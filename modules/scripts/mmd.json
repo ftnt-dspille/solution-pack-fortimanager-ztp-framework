@@ -323,7 +323,8 @@
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761
+                "maxlength": 10485761,
+                "_enableRange": false
             },
             "bulkAction": {
                 "allow": false,
@@ -333,7 +334,7 @@
             },
             "dataSourceFilters": null,
             "defaultValue": null,
-            "tooltip": null,
+            "tooltip": "Leverage Metadata sources for Jinja Variables. See Usage Docs for examples.",
             "visibility": true,
             "htmlEscape": false,
             "orphanRemoval": null,

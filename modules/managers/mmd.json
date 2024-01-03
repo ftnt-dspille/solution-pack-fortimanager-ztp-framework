@@ -862,7 +862,8 @@
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761
+                "maxlength": 10485761,
+                "_enableRange": false
             },
             "bulkAction": {
                 "allow": false,
@@ -872,7 +873,7 @@
             },
             "dataSourceFilters": null,
             "defaultValue": null,
-            "tooltip": null,
+            "tooltip": "{\n  \"var1\":\"val1\",\n  \"var2\":\"val2\"\n}",
             "visibility": true,
             "htmlEscape": false,
             "orphanRemoval": null,
@@ -908,7 +909,8 @@
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761
+                "maxlength": 10485761,
+                "_enableRange": false
             },
             "bulkAction": {
                 "allow": false,
@@ -918,7 +920,7 @@
             },
             "dataSourceFilters": null,
             "defaultValue": null,
-            "tooltip": null,
+            "tooltip": "Results of API call to a Manager.",
             "visibility": true,
             "htmlEscape": false,
             "orphanRemoval": null,
