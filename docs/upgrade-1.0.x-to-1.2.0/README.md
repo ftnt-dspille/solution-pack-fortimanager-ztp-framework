@@ -26,7 +26,7 @@ In these steps will we simply remove fields that will be modified by the upgrade
     - `Device Metadata`
   - **Manager**:
     - `Manager Metadata`
-    - `Source Data
+    - `Source Data`
   - **Metafield Template**:
     - `Metadata Sources`
   - **Script**:
