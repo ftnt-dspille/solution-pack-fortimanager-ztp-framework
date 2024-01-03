@@ -1,9 +1,9 @@
 | [Home](../README.md) |
 |----------------------|
 
-# Upgrade from 1.0.x to 1.2.0
+# Upgrade from 1.0.x to 1.2.0+
 
-Upgrading from version 1.0.x to 1.2.0 changes some field types that cannot be directly converted. This requires administrative pre-setup steps before performing an upgrade to be successful. If you have records the `Managers`, `Devices`, `Metafield Templates`, `Scripts`, or `ZTP Profile` then you need to export these records using the steps in `Pre-Steps Steps to Preserve Existing Records` before performing the upgrade. 
+Upgrading from version 1.0.x to 1.2.0+ changes some field types that cannot be directly converted. This requires administrative pre-setup steps before performing an upgrade to be successful. If you have records the `Managers`, `Devices`, `Metafield Templates`, `Scripts`, or `ZTP Profile` then you need to export these records using the steps in `Pre-Steps Steps to Preserve Existing Records` before performing the upgrade. 
 
 ## Pre-Steps Steps to Preserve Existing Records
 
@@ -15,7 +15,7 @@ If you do not have any records, or existing data, that you need to save you can 
 4. Run the Template `ZTPF-Export-Records` and save the zip file created to your local disk. 
 5. Next, perform the Steps in `Pre-Steps before Upgrade to 1.2.0`. 
 
-## Pre-Steps before Upgrade to 1.2.0
+## Pre-Steps before Upgrade to 1.2.0+
 
 In these steps will we simply remove fields that will be modified by the upgrade. 
 
