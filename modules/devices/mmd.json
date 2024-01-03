@@ -26,11 +26,12 @@
     "writable": true,
     "attributes": [
         {
+            "@id": "\/api\/3\/attribute_metadatas\/a73ec64a-d99e-4fa7-9d44-21d2d2b7134e",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "connectorConfig",
             "length": null,
-            "orderIndex": 3,
+            "orderIndex": 1,
             "formType": "text",
             "dataSource": null,
             "searchable": true,
@@ -60,17 +61,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "a73ec64a-d99e-4fa7-9d44-21d2d2b7134e",
             "displayName": "{{ connectorConfig }}",
             "descriptions": {
                 "singular": "Connector Config"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/fa542cc0-bef4-48d7-be85-42de12c2ca9a",
             "@type": "AttributeMetadata",
             "type": "managers",
             "name": "managers",
             "length": null,
-            "orderIndex": 4,
+            "orderIndex": 2,
             "formType": "lookup",
             "dataSource": {
                 "model": "managers"
@@ -107,17 +110,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "fa542cc0-bef4-48d7-be85-42de12c2ca9a",
             "displayName": "{{ managers }}",
             "descriptions": {
                 "singular": "Manager"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/6f0c068d-dded-4720-ba5c-543c253d23ad",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "deviceName",
             "length": null,
-            "orderIndex": 5,
+            "orderIndex": 3,
             "formType": "text",
             "dataSource": null,
             "searchable": true,
@@ -147,17 +152,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "6f0c068d-dded-4720-ba5c-543c253d23ad",
             "displayName": "{{ deviceName }}",
             "descriptions": {
                 "singular": "Device Name"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/51b595a3-7a6e-4420-9cbe-48e4e3a5e771",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "hostName",
             "length": null,
-            "orderIndex": 6,
+            "orderIndex": 4,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -191,17 +198,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "51b595a3-7a6e-4420-9cbe-48e4e3a5e771",
             "displayName": "{{ hostName }}",
             "descriptions": {
                 "singular": "Host Name"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/d4a9225b-1b1a-41e0-9f59-20016d97688c",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "aDOM",
             "length": null,
-            "orderIndex": 7,
+            "orderIndex": 5,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -236,17 +245,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "d4a9225b-1b1a-41e0-9f59-20016d97688c",
             "displayName": "{{ aDOM }}",
             "descriptions": {
                 "singular": "ADOM"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/b8fa727f-0d0e-4424-9f47-2a0c42def582",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "vDOM",
             "length": null,
-            "orderIndex": 8,
+            "orderIndex": 6,
             "formType": "text",
             "dataSource": null,
             "searchable": true,
@@ -276,17 +287,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "b8fa727f-0d0e-4424-9f47-2a0c42def582",
             "displayName": "{{ vDOM }}",
             "descriptions": {
                 "singular": "VDOM"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/ee49e9ce-7995-49c1-8d95-4f5517441d31",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "sn",
             "length": null,
-            "orderIndex": 9,
+            "orderIndex": 7,
             "formType": "text",
             "dataSource": null,
             "searchable": true,
@@ -316,17 +329,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "ee49e9ce-7995-49c1-8d95-4f5517441d31",
             "displayName": "{{ sn }}",
             "descriptions": {
                 "singular": "SN"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/4b571caf-4255-40aa-af49-8e178d8a171c",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "platform",
             "length": null,
-            "orderIndex": 10,
+            "orderIndex": 8,
             "formType": "text",
             "dataSource": null,
             "searchable": true,
@@ -361,17 +376,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "4b571caf-4255-40aa-af49-8e178d8a171c",
             "displayName": "{{ platform }}",
             "descriptions": {
                 "singular": "Platform"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/48c29e67-93ff-4e5d-9a7b-fa4c27982235",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "firmware",
             "length": null,
-            "orderIndex": 11,
+            "orderIndex": 9,
             "formType": "text",
             "dataSource": null,
             "searchable": true,
@@ -406,17 +423,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "48c29e67-93ff-4e5d-9a7b-fa4c27982235",
             "displayName": "{{ firmware }}",
             "descriptions": {
                 "singular": "Firmware"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/db8cd3e2-d08f-446f-8c11-015c91965de3",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "connectionStatus",
             "length": null,
-            "orderIndex": 12,
+            "orderIndex": 10,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -451,15 +470,111 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "db8cd3e2-d08f-446f-8c11-015c91965de3",
             "displayName": "{{ connectionStatus }}",
             "descriptions": {
                 "singular": "Connection Status"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/69833bbd-660d-4823-afb9-d90e915a4191",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "connectionStatusHTML",
+            "length": null,
+            "orderIndex": 11,
+            "formType": "html",
+            "dataSource": null,
+            "searchable": true,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": true,
+            "collection": false,
+            "inversedField": null,
+            "ownsRelationship": false,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761,
+                "_enableRange": false
+            },
+            "bulkAction": {
+                "allow": false,
+                "buttonText": "",
+                "buttonIcon": "",
+                "buttonClass": "btn btn-default btn-sm"
+            },
+            "dataSourceFilters": null,
+            "defaultValue": "",
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "69833bbd-660d-4823-afb9-d90e915a4191",
+            "displayName": "{{ connectionStatusHTML }}",
+            "descriptions": {
+                "singular": "Connection Status HTML"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/d7f53e16-782c-449a-b23c-80516c848e2b",
+            "@type": "AttributeMetadata",
+            "type": "string",
+            "name": "managementMode",
+            "length": null,
+            "orderIndex": 12,
+            "formType": "text",
+            "dataSource": null,
+            "searchable": true,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": false,
+            "inversedField": null,
+            "ownsRelationship": false,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761,
+                "_enableRange": false
+            },
+            "bulkAction": {
+                "allow": false,
+                "buttonText": "",
+                "buttonIcon": "",
+                "buttonClass": "btn btn-default btn-sm"
+            },
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "d7f53e16-782c-449a-b23c-80516c848e2b",
+            "displayName": "{{ managementMode }}",
+            "descriptions": {
+                "singular": "Management Mode"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/44bffd32-fbf5-4032-82db-c2646bce62f5",
+            "@type": "AttributeMetadata",
+            "type": "string",
+            "name": "managementModeHTML",
             "length": null,
             "orderIndex": 13,
             "formType": "html",
@@ -496,15 +611,17 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "displayName": "{{ connectionStatusHTML }}",
+            "uuid": "44bffd32-fbf5-4032-82db-c2646bce62f5",
+            "displayName": "{{ managementModeHTML }}",
             "descriptions": {
-                "singular": "Connection Status HTML"
+                "singular": "Management Mode HTML"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/fb52e57a-1dcc-46b5-a21c-29a8c3b68162",
             "@type": "AttributeMetadata",
             "type": "string",
-            "name": "managementMode",
+            "name": "configStatus",
             "length": null,
             "orderIndex": 14,
             "formType": "text",
@@ -541,15 +658,17 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "displayName": "{{ managementMode }}",
+            "uuid": "fb52e57a-1dcc-46b5-a21c-29a8c3b68162",
+            "displayName": "{{ configStatus }}",
             "descriptions": {
-                "singular": "Management Mode"
+                "singular": "Config Status"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/464b5bca-0285-41b5-9a18-d7886b149ac5",
             "@type": "AttributeMetadata",
             "type": "string",
-            "name": "managementModeHTML",
+            "name": "configStatusHTML",
             "length": null,
             "orderIndex": 15,
             "formType": "html",
@@ -586,15 +705,17 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "displayName": "{{ managementModeHTML }}",
+            "uuid": "464b5bca-0285-41b5-9a18-d7886b149ac5",
+            "displayName": "{{ configStatusHTML }}",
             "descriptions": {
-                "singular": "Management Mode HTML"
+                "singular": "Config Status HTML"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/781d9836-53d7-4e51-beff-6325af81468b",
             "@type": "AttributeMetadata",
             "type": "string",
-            "name": "configStatus",
+            "name": "configDBStatus",
             "length": null,
             "orderIndex": 16,
             "formType": "text",
@@ -631,15 +752,17 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "displayName": "{{ configStatus }}",
+            "uuid": "781d9836-53d7-4e51-beff-6325af81468b",
+            "displayName": "{{ configDBStatus }}",
             "descriptions": {
-                "singular": "Config Status"
+                "singular": "ConfigDB Status"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/333b536f-b3b7-4802-9f4a-062d0a64ae83",
             "@type": "AttributeMetadata",
             "type": "string",
-            "name": "configStatusHTML",
+            "name": "configDBStatusHTML",
             "length": null,
             "orderIndex": 17,
             "formType": "html",
@@ -676,192 +799,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "displayName": "{{ configStatusHTML }}",
-            "descriptions": {
-                "singular": "Config Status HTML"
-            }
-        },
-        {
-            "@type": "AttributeMetadata",
-            "type": "string",
-            "name": "configDBStatus",
-            "length": null,
-            "orderIndex": 18,
-            "formType": "text",
-            "dataSource": null,
-            "searchable": true,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": false,
-            "inversedField": null,
-            "ownsRelationship": false,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761,
-                "_enableRange": false
-            },
-            "bulkAction": {
-                "allow": false,
-                "buttonText": "",
-                "buttonIcon": "",
-                "buttonClass": "btn btn-default btn-sm"
-            },
-            "dataSourceFilters": null,
-            "defaultValue": null,
-            "tooltip": null,
-            "visibility": true,
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ configDBStatus }}",
-            "descriptions": {
-                "singular": "ConfigDB Status"
-            }
-        },
-        {
-            "@type": "AttributeMetadata",
-            "type": "string",
-            "name": "configDBStatusHTML",
-            "length": null,
-            "orderIndex": 19,
-            "formType": "html",
-            "dataSource": null,
-            "searchable": true,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": true,
-            "collection": false,
-            "inversedField": null,
-            "ownsRelationship": false,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761,
-                "_enableRange": false
-            },
-            "bulkAction": {
-                "allow": false,
-                "buttonText": "",
-                "buttonIcon": "",
-                "buttonClass": "btn btn-default btn-sm"
-            },
-            "dataSourceFilters": null,
-            "defaultValue": "",
-            "tooltip": null,
-            "visibility": true,
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
+            "uuid": "333b536f-b3b7-4802-9f4a-062d0a64ae83",
             "displayName": "{{ configDBStatusHTML }}",
             "descriptions": {
                 "singular": "ConfigDB Status HTML"
             }
         },
         {
-            "@type": "AttributeMetadata",
-            "type": "comments",
-            "name": "comments",
-            "length": null,
-            "orderIndex": 20,
-            "formType": "manyToMany",
-            "dataSource": {
-                "model": "comments"
-            },
-            "searchable": false,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": true,
-            "inversedField": "devices",
-            "ownsRelationship": true,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761
-            },
-            "bulkAction": [],
-            "dataSourceFilters": null,
-            "defaultValue": null,
-            "tooltip": null,
-            "visibility": true,
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ comments }}",
-            "descriptions": {
-                "singular": "Comments"
-            }
-        },
-        {
-            "@type": "AttributeMetadata",
-            "type": "string",
-            "name": "sourceData",
-            "length": null,
-            "orderIndex": 21,
-            "formType": "textarea",
-            "dataSource": null,
-            "searchable": true,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": false,
-            "inversedField": null,
-            "ownsRelationship": false,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761
-            },
-            "bulkAction": {
-                "allow": false,
-                "buttonText": "",
-                "buttonIcon": "",
-                "buttonClass": "btn btn-default btn-sm"
-            },
-            "dataSourceFilters": null,
-            "defaultValue": null,
-            "tooltip": null,
-            "visibility": true,
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ sourceData }}",
-            "descriptions": {
-                "singular": "Source Data"
-            }
-        },
-        {
+            "@id": "\/api\/3\/attribute_metadatas\/f202f2fd-ba7c-4851-bbde-9e85c25ad022",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "deviceIP",
             "length": null,
-            "orderIndex": 22,
+            "orderIndex": 18,
             "formType": "ipv4",
             "dataSource": null,
             "searchable": true,
@@ -896,17 +846,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "f202f2fd-ba7c-4851-bbde-9e85c25ad022",
             "displayName": "{{ deviceIP }}",
             "descriptions": {
                 "singular": "Device IP"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/18f2eb38-f978-4712-81d1-44d0355abd39",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "provisioningTemplates",
             "length": null,
-            "orderIndex": 23,
+            "orderIndex": 19,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -940,17 +892,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "18f2eb38-f978-4712-81d1-44d0355abd39",
             "displayName": "{{ provisioningTemplates }}",
             "descriptions": {
                 "singular": "Provisioning Templates"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/f2421f71-0ea1-4a94-8e9f-e41cb380dd2b",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "provisioningTemplatesHTML",
             "length": null,
-            "orderIndex": 24,
+            "orderIndex": 20,
             "formType": "html",
             "dataSource": null,
             "searchable": true,
@@ -985,17 +939,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "f2421f71-0ea1-4a94-8e9f-e41cb380dd2b",
             "displayName": "{{ provisioningTemplatesHTML }}",
             "descriptions": {
                 "singular": "Provisioning Templates HTML"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/b5b42e93-9ab3-47df-9190-797a186acfbc",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "policyPackage",
             "length": null,
-            "orderIndex": 25,
+            "orderIndex": 21,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -1030,17 +986,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "b5b42e93-9ab3-47df-9190-797a186acfbc",
             "displayName": "{{ policyPackage }}",
             "descriptions": {
                 "singular": "Policy Package"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/4eceae9b-4be6-4b03-9e3f-d77faf1b57f3",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "policyPackageStatus",
             "length": null,
-            "orderIndex": 26,
+            "orderIndex": 22,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -1074,17 +1032,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "4eceae9b-4be6-4b03-9e3f-d77faf1b57f3",
             "displayName": "{{ policyPackageStatus }}",
             "descriptions": {
                 "singular": "Policy Package Status"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/2fea029e-008c-41c3-b8a3-c02da9026b03",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "policyPackageHTML",
             "length": null,
-            "orderIndex": 27,
+            "orderIndex": 23,
             "formType": "html",
             "dataSource": null,
             "searchable": true,
@@ -1119,20 +1079,22 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "2fea029e-008c-41c3-b8a3-c02da9026b03",
             "displayName": "{{ policyPackageHTML }}",
             "descriptions": {
                 "singular": "Policy Package HTML"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/e3222dfb-2050-4277-959b-aa0b4cfcb264",
             "@type": "AttributeMetadata",
-            "type": "string",
+            "type": "object",
             "name": "deviceMetadata",
             "length": null,
-            "orderIndex": 28,
-            "formType": "textarea",
+            "orderIndex": 24,
+            "formType": "object",
             "dataSource": null,
-            "searchable": true,
+            "searchable": false,
             "peerReplicable": true,
             "system": false,
             "encrypted": false,
@@ -1143,8 +1105,7 @@
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761,
-                "_enableRange": false
+                "maxlength": 10485761
             },
             "bulkAction": {
                 "allow": false,
@@ -1153,8 +1114,8 @@
                 "buttonClass": "btn btn-default btn-sm"
             },
             "dataSourceFilters": null,
-            "defaultValue": "",
-            "tooltip": "{\n  \"var1\":\"val1\",\n  \"var2\":\"val2\"\n}",
+            "defaultValue": null,
+            "tooltip": null,
             "visibility": true,
             "htmlEscape": false,
             "orphanRemoval": null,
@@ -1164,17 +1125,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "e3222dfb-2050-4277-959b-aa0b4cfcb264",
             "displayName": "{{ deviceMetadata }}",
             "descriptions": {
                 "singular": "Device Metadata"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/660255a7-fb2c-44c1-8d1f-2a4dfcccc4ea",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "deviceMetadataHTML",
             "length": null,
-            "orderIndex": 29,
+            "orderIndex": 25,
             "formType": "html",
             "dataSource": null,
             "searchable": true,
@@ -1208,17 +1171,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "660255a7-fb2c-44c1-8d1f-2a4dfcccc4ea",
             "displayName": "{{ deviceMetadataHTML }}",
             "descriptions": {
                 "singular": "Device Metadata HTML"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/051590e9-8d68-4ba2-ac74-7ced98dd2458",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "deviceMetafieldCompleted",
             "length": null,
-            "orderIndex": 30,
+            "orderIndex": 26,
             "formType": "integer",
             "dataSource": null,
             "searchable": true,
@@ -1252,17 +1217,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "051590e9-8d68-4ba2-ac74-7ced98dd2458",
             "displayName": "{{ deviceMetafieldCompleted }}",
             "descriptions": {
                 "singular": "Device Metafield Completed"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/5c0c47f2-9d6b-48df-9afd-652e5aae0610",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "deviceMetafieldTotal",
             "length": null,
-            "orderIndex": 31,
+            "orderIndex": 27,
             "formType": "integer",
             "dataSource": null,
             "searchable": true,
@@ -1296,17 +1263,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "5c0c47f2-9d6b-48df-9afd-652e5aae0610",
             "displayName": "{{ deviceMetafieldTotal }}",
             "descriptions": {
                 "singular": "Device Metafield Total"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/a77a7e3e-3040-4597-b565-29c95ccb26ab",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "description",
             "length": null,
-            "orderIndex": 32,
+            "orderIndex": 28,
             "formType": "richtext",
             "dataSource": null,
             "searchable": true,
@@ -1341,100 +1310,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "a77a7e3e-3040-4597-b565-29c95ccb26ab",
             "displayName": "{{ description }}",
             "descriptions": {
                 "singular": "Description"
             }
         },
         {
-            "@type": "AttributeMetadata",
-            "type": "metafield_templates",
-            "name": "metafieldTemplates",
-            "length": null,
-            "orderIndex": 33,
-            "formType": "manyToMany",
-            "dataSource": {
-                "model": "metafield_templates"
-            },
-            "searchable": false,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": true,
-            "inversedField": "devices",
-            "ownsRelationship": true,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761
-            },
-            "bulkAction": [],
-            "dataSourceFilters": null,
-            "defaultValue": null,
-            "tooltip": null,
-            "visibility": true,
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ metafieldTemplates }}",
-            "descriptions": {
-                "singular": "Metafield Templates"
-            }
-        },
-        {
-            "@type": "AttributeMetadata",
-            "type": "scripts",
-            "name": "scripts",
-            "length": null,
-            "orderIndex": 34,
-            "formType": "manyToMany",
-            "dataSource": {
-                "model": "scripts"
-            },
-            "searchable": false,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": true,
-            "inversedField": "devices",
-            "ownsRelationship": true,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761,
-                "_enableRange": false
-            },
-            "bulkAction": [],
-            "dataSourceFilters": null,
-            "defaultValue": null,
-            "tooltip": null,
-            "visibility": true,
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ scripts }}",
-            "descriptions": {
-                "singular": "Scripts"
-            }
-        },
-        {
+            "@id": "\/api\/3\/attribute_metadatas\/8109dd61-eb0b-4e9e-842b-b2a2d328849c",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "provisioningTemplatesStatus",
             "length": null,
-            "orderIndex": 35,
+            "orderIndex": 29,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -1469,17 +1357,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "8109dd61-eb0b-4e9e-842b-b2a2d328849c",
             "displayName": "{{ provisioningTemplatesStatus }}",
             "descriptions": {
                 "singular": "Provisioning Templates Status"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/20ef4dd4-9ed6-4569-bd91-ea16181321ca",
             "@type": "AttributeMetadata",
             "type": "z_t_p_profiles",
             "name": "zTPProfiles",
             "length": null,
-            "orderIndex": 36,
+            "orderIndex": 30,
             "formType": "lookup",
             "dataSource": {
                 "model": "z_t_p_profiles"
@@ -1516,17 +1406,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "20ef4dd4-9ed6-4569-bd91-ea16181321ca",
             "displayName": "{{ zTPProfiles }}",
             "descriptions": {
                 "singular": "ZTP Profile"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/ab7235b3-d0fb-4b93-a7c2-95747e7c89a9",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "zTPPhase",
             "length": null,
-            "orderIndex": 37,
+            "orderIndex": 31,
             "formType": "picklist",
             "dataSource": {
                 "model": "picklists",
@@ -1863,17 +1755,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "ab7235b3-d0fb-4b93-a7c2-95747e7c89a9",
             "displayName": "{{ zTPPhase }}",
             "descriptions": {
                 "singular": "ZTP Phase"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/90efe436-b099-4d94-81c7-ff867a08f15a",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "zTPPhaseStarted",
             "length": null,
-            "orderIndex": 38,
+            "orderIndex": 32,
             "formType": "datetime",
             "dataSource": null,
             "searchable": true,
@@ -1907,17 +1801,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "90efe436-b099-4d94-81c7-ff867a08f15a",
             "displayName": "{{ zTPPhaseStarted }}",
             "descriptions": {
                 "singular": "ZTP Phase Started"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/7096cb9a-1533-43b4-9220-af8d67d1257b",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "zTPPhaseCompleted",
             "length": null,
-            "orderIndex": 39,
+            "orderIndex": 33,
             "formType": "datetime",
             "dataSource": null,
             "searchable": true,
@@ -1951,17 +1847,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "7096cb9a-1533-43b4-9220-af8d67d1257b",
             "displayName": "{{ zTPPhaseCompleted }}",
             "descriptions": {
                 "singular": "ZTP Phase Completed"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/5ba86c4f-1dfd-46c0-8070-a990cfb960c8",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "zTPPhaseLast",
             "length": null,
-            "orderIndex": 40,
+            "orderIndex": 34,
             "formType": "picklist",
             "dataSource": {
                 "model": "picklists",
@@ -2069,17 +1967,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "5ba86c4f-1dfd-46c0-8070-a990cfb960c8",
             "displayName": "{{ zTPPhaseLast }}",
             "descriptions": {
                 "singular": "ZTP Phase Last"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/5ec7d3fa-ff11-469d-8d87-d5d1b18a5feb",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "zTPStatus",
             "length": null,
-            "orderIndex": 41,
+            "orderIndex": 35,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -2113,17 +2013,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "5ec7d3fa-ff11-469d-8d87-d5d1b18a5feb",
             "displayName": "{{ zTPStatus }}",
             "descriptions": {
                 "singular": "ZTP Status"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/d0f55d69-0e84-4a24-ac2c-83eae1a9aa11",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "zTPStatusHTML",
             "length": null,
-            "orderIndex": 42,
+            "orderIndex": 36,
             "formType": "html",
             "dataSource": null,
             "searchable": true,
@@ -2157,17 +2059,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "d0f55d69-0e84-4a24-ac2c-83eae1a9aa11",
             "displayName": "{{ zTPStatusHTML }}",
             "descriptions": {
                 "singular": "ZTP Status HTML"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/e19ba37a-7e07-43f7-a641-ee39fcba469d",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "deviceGroups",
             "length": null,
-            "orderIndex": 43,
+            "orderIndex": 37,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -2201,17 +2105,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "e19ba37a-7e07-43f7-a641-ee39fcba469d",
             "displayName": "{{ deviceGroups }}",
             "descriptions": {
                 "singular": "Device Groups"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/c11f2a45-b55b-4aa6-b6f2-0b5ef884d82f",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "reportMarkdown",
             "length": null,
-            "orderIndex": 44,
+            "orderIndex": 38,
             "formType": "richtext",
             "dataSource": null,
             "searchable": true,
@@ -2245,9 +2151,186 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "c11f2a45-b55b-4aa6-b6f2-0b5ef884d82f",
             "displayName": "{{ reportMarkdown }}",
             "descriptions": {
                 "singular": "Report Markdown"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/8d9214b6-52bf-462d-8436-3f10c1f35319",
+            "@type": "AttributeMetadata",
+            "type": "object",
+            "name": "sourceData",
+            "length": null,
+            "orderIndex": 39,
+            "formType": "object",
+            "dataSource": null,
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": false,
+            "inversedField": null,
+            "ownsRelationship": false,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761
+            },
+            "bulkAction": {
+                "allow": false,
+                "buttonText": "",
+                "buttonIcon": "",
+                "buttonClass": "btn btn-default btn-sm"
+            },
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "8d9214b6-52bf-462d-8436-3f10c1f35319",
+            "displayName": "{{ sourceData }}",
+            "descriptions": {
+                "singular": "Source Data"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/8dddb032-b1cd-402a-a919-857ede2abfc9",
+            "@type": "AttributeMetadata",
+            "type": "metafield_templates",
+            "name": "metafieldTemplates",
+            "length": null,
+            "orderIndex": 40,
+            "formType": "manyToMany",
+            "dataSource": {
+                "model": "metafield_templates"
+            },
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": true,
+            "inversedField": "devices",
+            "ownsRelationship": true,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761
+            },
+            "bulkAction": [],
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "8dddb032-b1cd-402a-a919-857ede2abfc9",
+            "displayName": "{{ metafieldTemplates }}",
+            "descriptions": {
+                "singular": "Metafield Templates"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/b15b2313-933b-47de-95ac-51e8088f44d0",
+            "@type": "AttributeMetadata",
+            "type": "scripts",
+            "name": "scripts",
+            "length": null,
+            "orderIndex": 41,
+            "formType": "manyToMany",
+            "dataSource": {
+                "model": "scripts"
+            },
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": true,
+            "inversedField": "devices",
+            "ownsRelationship": true,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761,
+                "_enableRange": false
+            },
+            "bulkAction": [],
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "b15b2313-933b-47de-95ac-51e8088f44d0",
+            "displayName": "{{ scripts }}",
+            "descriptions": {
+                "singular": "Scripts"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/23ed4e6d-40e3-48f5-8968-c6c8e59fead8",
+            "@type": "AttributeMetadata",
+            "type": "comments",
+            "name": "comments",
+            "length": null,
+            "orderIndex": 42,
+            "formType": "manyToMany",
+            "dataSource": {
+                "model": "comments"
+            },
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": true,
+            "inversedField": "devices",
+            "ownsRelationship": true,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761
+            },
+            "bulkAction": [],
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "23ed4e6d-40e3-48f5-8968-c6c8e59fead8",
+            "displayName": "{{ comments }}",
+            "descriptions": {
+                "singular": "Comments"
             }
         }
     ],

@@ -34,6 +34,7 @@
     "writable": true,
     "attributes": [
         {
+            "@id": "\/api\/3\/attribute_metadatas\/38bd8b37-b570-41fd-9bf5-89a9501d177e",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "orderPriority",
@@ -72,12 +73,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "38bd8b37-b570-41fd-9bf5-89a9501d177e",
             "displayName": "{{ orderPriority }}",
             "descriptions": {
                 "singular": "Order Priority"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/ff9eaa5d-0f04-41c2-8640-df08daac0dde",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "name",
@@ -117,12 +120,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "ff9eaa5d-0f04-41c2-8640-df08daac0dde",
             "displayName": "{{ name }}",
             "descriptions": {
                 "singular": "Name"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/2156b4e8-6d37-42c4-8b63-5ea8fa823a38",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "description",
@@ -162,12 +167,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "2156b4e8-6d37-42c4-8b63-5ea8fa823a38",
             "displayName": "{{ description }}",
             "descriptions": {
                 "singular": "Description"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/1ca8f3cd-a0b7-483a-9461-e016ae3cf247",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "metafieldTemplate",
@@ -207,32 +214,33 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "1ca8f3cd-a0b7-483a-9461-e016ae3cf247",
             "displayName": "{{ metafieldTemplate }}",
             "descriptions": {
                 "singular": "Metafield Template"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/7697cb4f-b722-4d92-8bfa-ab853539338f",
             "@type": "AttributeMetadata",
-            "type": "string",
+            "type": "object",
             "name": "metadataSources",
             "length": null,
             "orderIndex": 5,
-            "formType": "textarea",
+            "formType": "object",
             "dataSource": null,
-            "searchable": true,
+            "searchable": false,
             "peerReplicable": true,
             "system": false,
             "encrypted": false,
-            "gridColumn": true,
+            "gridColumn": false,
             "collection": false,
             "inversedField": null,
             "ownsRelationship": false,
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761,
-                "_enableRange": false
+                "maxlength": 10485761
             },
             "bulkAction": {
                 "allow": false,
@@ -252,12 +260,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "7697cb4f-b722-4d92-8bfa-ab853539338f",
             "displayName": "{{ metadataSources }}",
             "descriptions": {
                 "singular": "Metadata Sources"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/06c0f346-0ca5-4ef0-bc87-00d18deafe74",
             "@type": "AttributeMetadata",
             "type": "z_t_p_profiles",
             "name": "zTPProfiles",
@@ -289,12 +299,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "06c0f346-0ca5-4ef0-bc87-00d18deafe74",
             "displayName": "{{ zTPProfiles }}",
             "descriptions": {
                 "singular": "ZTP Profiles"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/fd2d12f4-17fd-4183-b559-a64af49da6c5",
             "@type": "AttributeMetadata",
             "type": "devices",
             "name": "devices",
@@ -326,17 +338,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "fd2d12f4-17fd-4183-b559-a64af49da6c5",
             "displayName": "{{ devices }}",
             "descriptions": {
                 "singular": "Devices"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/793d9ae8-b44e-4029-a78f-8b8c33ee60de",
             "@type": "AttributeMetadata",
             "type": "scripts",
             "name": "scripts",
             "length": null,
-            "orderIndex": 7,
+            "orderIndex": 8,
             "formType": "manyToMany",
             "dataSource": {
                 "model": "scripts"
@@ -363,6 +377,7 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "793d9ae8-b44e-4029-a78f-8b8c33ee60de",
             "displayName": "{{Scripts}}",
             "descriptions": {
                 "singular": "Scripts"

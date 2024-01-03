@@ -30,6 +30,7 @@
     "writable": true,
     "attributes": [
         {
+            "@id": "\/api\/3\/attribute_metadatas\/f7a1c14e-08bd-4d3a-999e-c50d55403852",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "name",
@@ -69,12 +70,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "f7a1c14e-08bd-4d3a-999e-c50d55403852",
             "displayName": "{{ name }}",
             "descriptions": {
                 "singular": "Name"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/7ca97b9e-1c09-4f4b-a399-eefc802bf140",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "profileMode",
@@ -155,12 +158,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "7ca97b9e-1c09-4f4b-a399-eefc802bf140",
             "displayName": "{{ profileMode }}",
             "descriptions": {
                 "singular": "Profile Mode"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/ee3db4e0-1a46-4144-8f65-de53733cf064",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "description",
@@ -200,12 +205,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "ee3db4e0-1a46-4144-8f65-de53733cf064",
             "displayName": "{{ description }}",
             "descriptions": {
                 "singular": "Description"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/203850ed-f051-4761-82ef-d9d53082eecb",
             "@type": "AttributeMetadata",
             "type": "scripts",
             "name": "scripts",
@@ -242,12 +249,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "203850ed-f051-4761-82ef-d9d53082eecb",
             "displayName": "{{ scripts }}",
             "descriptions": {
                 "singular": "Scripts"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/0ea9a0f4-41c0-4290-a66e-2065256f2582",
             "@type": "AttributeMetadata",
             "type": "metafield_templates",
             "name": "metafieldTemplates",
@@ -284,12 +293,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "0ea9a0f4-41c0-4290-a66e-2065256f2582",
             "displayName": "{{ metafieldTemplates }}",
             "descriptions": {
                 "singular": "Metafield Templates"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/4f367c5f-5d6a-493d-ba50-447503423347",
             "@type": "AttributeMetadata",
             "type": "devices",
             "name": "devices",
@@ -326,12 +337,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "4f367c5f-5d6a-493d-ba50-447503423347",
             "displayName": "{{ devices }}",
             "descriptions": {
                 "singular": "Devices"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/a68c0e18-d788-44bd-8c5e-f6d35ee0502b",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "orderPriority",
@@ -370,12 +383,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "a68c0e18-d788-44bd-8c5e-f6d35ee0502b",
             "displayName": "{{ orderPriority }}",
             "descriptions": {
                 "singular": "Order Priority"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/8659094d-e9c2-4087-a9f6-4589534f6578",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "assignmentMode",
@@ -448,12 +463,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "8659094d-e9c2-4087-a9f6-4589534f6578",
             "displayName": "{{ assignmentMode }}",
             "descriptions": {
                 "singular": "Assignment Mode"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/6f0dcb50-1de8-4a1d-90ab-0f1fb9f0f299",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "assignmentSearchType",
@@ -526,12 +543,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "6f0dcb50-1de8-4a1d-90ab-0f1fb9f0f299",
             "displayName": "{{ assignmentSearchType }}",
             "descriptions": {
                 "singular": "Assignment Search Type"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/0b9741b5-a8ec-498c-8799-be37136f0cd3",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "assignmentSearchField",
@@ -642,81 +661,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "0b9741b5-a8ec-498c-8799-be37136f0cd3",
             "displayName": "{{ assignmentSearchField }}",
             "descriptions": {
                 "singular": "Assignment Search Fields"
             }
         },
         {
-            "@type": "AttributeMetadata",
-            "type": "string",
-            "name": "assignmentSearchMetadataSources",
-            "length": null,
-            "orderIndex": 11,
-            "formType": "textarea",
-            "dataSource": null,
-            "searchable": true,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": false,
-            "inversedField": null,
-            "ownsRelationship": false,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761,
-                "_enableRange": false
-            },
-            "bulkAction": {
-                "allow": false,
-                "buttonText": "",
-                "buttonIcon": "",
-                "buttonClass": "btn btn-default btn-sm"
-            },
-            "dataSourceFilters": null,
-            "defaultValue": null,
-            "tooltip": "Create custom Jinja vars using external sources.",
-            "visibility": [
-                {
-                    "sort": [],
-                    "limit": 30,
-                    "logic": "AND",
-                    "filters": [
-                        {
-                            "field": "assignmentSearchType",
-                            "operator": "eq",
-                            "value": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed",
-                            "_value": {
-                                "display": "Jinja",
-                                "itemValue": "Jinja",
-                                "@id": "\/api\/3\/picklists\/1a2dbeff-3942-4284-97a7-01948ab6e6ed"
-                            },
-                            "type": "object"
-                        }
-                    ]
-                }
-            ],
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ assignmentSearchMetadataSources }}",
-            "descriptions": {
-                "singular": "Assignment Search Metadata Sources"
-            }
-        },
-        {
+            "@id": "\/api\/3\/attribute_metadatas\/455236ff-07f8-4a17-aabd-a953cc3d4889",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "assignmentSearch",
             "length": null,
-            "orderIndex": 12,
+            "orderIndex": 11,
             "formType": "textarea",
             "dataSource": null,
             "searchable": true,
@@ -751,12 +708,60 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "455236ff-07f8-4a17-aabd-a953cc3d4889",
             "displayName": "{{ assignmentSearch }}",
             "descriptions": {
                 "singular": "Assignment Search"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/1d3639a7-8f7f-44f7-bfff-9762163e6263",
+            "@type": "AttributeMetadata",
+            "type": "object",
+            "name": "assignmentSearchMetadataSources",
+            "length": null,
+            "orderIndex": 12,
+            "formType": "object",
+            "dataSource": null,
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": false,
+            "inversedField": null,
+            "ownsRelationship": false,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761
+            },
+            "bulkAction": {
+                "allow": false,
+                "buttonText": "",
+                "buttonIcon": "",
+                "buttonClass": "btn btn-default btn-sm"
+            },
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "1d3639a7-8f7f-44f7-bfff-9762163e6263",
+            "displayName": "{{ assignmentSearchMetadataSources }}",
+            "descriptions": {
+                "singular": "Assignment Search Metadata Sources"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/16384c33-99d5-441c-a4a0-be72a51c41ae",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "aDOM",
@@ -796,12 +801,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "16384c33-99d5-441c-a4a0-be72a51c41ae",
             "displayName": "{{ aDOM }}",
             "descriptions": {
                 "singular": "ADOM"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/ae9177c3-4c5d-4e91-8db3-665b180240d1",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "deviceGroups",
@@ -841,12 +848,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "ae9177c3-4c5d-4e91-8db3-665b180240d1",
             "displayName": "{{ deviceGroups }}",
             "descriptions": {
                 "singular": "Device Groups"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/e135e238-5596-48d8-acdd-22908605bf31",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "provisioningTemplateGroup",
@@ -886,12 +895,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "e135e238-5596-48d8-acdd-22908605bf31",
             "displayName": "{{ provisioningTemplateGroup }}",
             "descriptions": {
                 "singular": "Provisioning Template Group"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/5c021234-5072-40a7-8e90-7c89f1c083c9",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "policyPackage",
@@ -931,17 +942,65 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "5c021234-5072-40a7-8e90-7c89f1c083c9",
             "displayName": "{{ policyPackage }}",
             "descriptions": {
                 "singular": "Policy Package"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/7016380f-9cba-45b4-a478-96deb827815b",
+            "@type": "AttributeMetadata",
+            "type": "object",
+            "name": "zTPStepMap",
+            "length": null,
+            "orderIndex": 17,
+            "formType": "object",
+            "dataSource": null,
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": false,
+            "inversedField": null,
+            "ownsRelationship": false,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761
+            },
+            "bulkAction": {
+                "allow": false,
+                "buttonText": "",
+                "buttonIcon": "",
+                "buttonClass": "btn btn-default btn-sm"
+            },
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "7016380f-9cba-45b4-a478-96deb827815b",
+            "displayName": "{{ zTPStepMap }}",
+            "descriptions": {
+                "singular": "ZTP Step Map"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/36d2ffd6-1062-496f-a421-b83bdeaf2e2f",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "zTPPhaseStart",
             "length": null,
-            "orderIndex": 17,
+            "orderIndex": 18,
             "formType": "picklist",
             "dataSource": {
                 "model": "picklists",
@@ -1041,76 +1100,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "36d2ffd6-1062-496f-a421-b83bdeaf2e2f",
             "displayName": "{{ zTPPhaseStart }}",
             "descriptions": {
                 "singular": "ZTP Phase Start"
             }
         },
         {
-            "@type": "AttributeMetadata",
-            "type": "string",
-            "name": "zTPStepMap",
-            "length": null,
-            "orderIndex": 18,
-            "formType": "textarea",
-            "dataSource": null,
-            "searchable": true,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": false,
-            "inversedField": null,
-            "ownsRelationship": false,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761,
-                "_enableRange": false
-            },
-            "bulkAction": {
-                "allow": false,
-                "buttonText": "",
-                "buttonIcon": "",
-                "buttonClass": "btn btn-default btn-sm"
-            },
-            "dataSourceFilters": null,
-            "defaultValue": "{\n  \"Authorize\" : {\n    \"next_step\" : \"Device Metadata\"\n  },\n  \"Device Metadata\": {\n    \"next_step\" : \"Device Groups\"\n  },\n  \"Device Groups\": {\n    \"next_step\" : \"Run Linked Scripts\"\n  },\n  \"Run Linked Scripts\": {\n    \"next_step\" : \"Install Device Config\"\n  },\n  \"Install Device Config\": {\n    \"next_step\" : \"Install Policy Package\"\n  },\n  \"Install Policy Package\": {\n    \"next_step\" : \"Complete\"\n  } \n}",
-            "tooltip": "Mapping of Steps through the ZTP Phases.",
-            "visibility": [
-                {
-                    "sort": [],
-                    "limit": 30,
-                    "logic": "AND",
-                    "filters": [
-                        {
-                            "field": "profileMode",
-                            "operator": "neq",
-                            "value": "\/api\/3\/picklists\/2f319930-ea3f-46c5-8b4f-6af67736ef1b",
-                            "_value": {
-                                "display": "Manual",
-                                "itemValue": "Manual",
-                                "@id": "\/api\/3\/picklists\/2f319930-ea3f-46c5-8b4f-6af67736ef1b"
-                            },
-                            "type": "object"
-                        }
-                    ]
-                }
-            ],
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ zTPStepMap }}",
-            "descriptions": {
-                "singular": "ZTP Step Map"
-            }
-        },
-        {
+            "@id": "\/api\/3\/attribute_metadatas\/af08469d-16fc-4798-8382-af320c91f466",
             "@type": "AttributeMetadata",
             "type": "z_t_p_profiles",
             "name": "zTPProfileNext",
@@ -1170,12 +1167,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "af08469d-16fc-4798-8382-af320c91f466",
             "displayName": "{{ zTPProfileNext }}",
             "descriptions": {
                 "singular": "ZTP Profile Next"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/5751d840-ee15-428f-b06e-d13fdb8e9864",
             "@type": "AttributeMetadata",
             "type": "boolean",
             "name": "clearLinkedMetafieldTemplates",
@@ -1215,12 +1214,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "5751d840-ee15-428f-b06e-d13fdb8e9864",
             "displayName": "{{ clearLinkedMetafieldTemplates }}",
             "descriptions": {
                 "singular": "Clear Linked Metafield Templates"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/ba6a1707-2d25-47cf-a1b7-a9ccb2dbe3ef",
             "@type": "AttributeMetadata",
             "type": "boolean",
             "name": "clearLinkedScripts",
@@ -1260,12 +1261,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "ba6a1707-2d25-47cf-a1b7-a9ccb2dbe3ef",
             "displayName": "{{ clearLinkedScripts }}",
             "descriptions": {
                 "singular": "Clear Linked Scripts"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/1541aeaf-ad52-43ff-bab6-788b0c3f1bd0",
             "@type": "AttributeMetadata",
             "type": "boolean",
             "name": "clearDeviceMetadata",
@@ -1305,12 +1308,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "1541aeaf-ad52-43ff-bab6-788b0c3f1bd0",
             "displayName": "{{ clearDeviceMetadata }}",
             "descriptions": {
                 "singular": "Clear Device Metadata"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/2c1e616d-3ec8-4170-9620-cbe038313f8a",
             "@type": "AttributeMetadata",
             "type": "boolean",
             "name": "retainProfileAssignment",
@@ -1369,12 +1374,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "2c1e616d-3ec8-4170-9620-cbe038313f8a",
             "displayName": "{{ retainProfileAssignment }}",
             "descriptions": {
                 "singular": "Retain Profile Assignment"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/fb24196a-e446-4bd9-a90c-1b54b980d75a",
             "@type": "AttributeMetadata",
             "type": "boolean",
             "name": "exportMetadataToFortiManager",
@@ -1413,12 +1420,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "fb24196a-e446-4bd9-a90c-1b54b980d75a",
             "displayName": "{{ exportMetadataToFortiManager }}",
             "descriptions": {
                 "singular": "Export Metadata to FortiManager"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/eaab25d0-a908-4c10-93f2-f9eca95d3c3c",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "incompleteMetafieldEmail",
@@ -1458,17 +1467,66 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "eaab25d0-a908-4c10-93f2-f9eca95d3c3c",
             "displayName": "{{ incompleteMetafieldEmail }}",
             "descriptions": {
                 "singular": "Incomplete Metafield Email"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/a2e00f1f-1890-4774-b7ae-c8052ae65397",
+            "@type": "AttributeMetadata",
+            "type": "string",
+            "name": "deviceMetadataEmailLookup",
+            "length": null,
+            "orderIndex": 26,
+            "formType": "text",
+            "dataSource": null,
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": false,
+            "inversedField": null,
+            "ownsRelationship": false,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761,
+                "_enableRange": false
+            },
+            "bulkAction": {
+                "allow": false,
+                "buttonText": "",
+                "buttonIcon": "",
+                "buttonClass": "btn btn-default btn-sm"
+            },
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "a2e00f1f-1890-4774-b7ae-c8052ae65397",
+            "displayName": "{{ deviceMetadataEmailLookup }}",
+            "descriptions": {
+                "singular": "Device Metadata Email Lookup"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/663b3c9a-3fb2-4f8c-b45e-ae87cba73f17",
             "@type": "AttributeMetadata",
             "type": "boolean",
             "name": "clearDeviceReports",
             "length": null,
-            "orderIndex": 26,
+            "orderIndex": 27,
             "formType": "checkbox",
             "dataSource": null,
             "searchable": true,
@@ -1503,57 +1561,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "663b3c9a-3fb2-4f8c-b45e-ae87cba73f17",
             "displayName": "{{ clearDeviceReports }}",
             "descriptions": {
                 "singular": "Clear Device Reports"
             }
         },
         {
-            "@type": "AttributeMetadata",
-            "type": "string",
-            "name": "incompleteMetafieldDeviceMetadataField",
-            "length": null,
-            "orderIndex": 27,
-            "formType": "text",
-            "dataSource": null,
-            "searchable": false,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": false,
-            "inversedField": null,
-            "ownsRelationship": false,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761,
-                "_enableRange": false
-            },
-            "bulkAction": {
-                "allow": false,
-                "buttonText": "",
-                "buttonIcon": "",
-                "buttonClass": "btn btn-default btn-sm"
-            },
-            "dataSourceFilters": null,
-            "defaultValue": "contact_email",
-            "tooltip": "If the device has this metadatafield populated then use this as the distribution.\nDefault=contact_email",
-            "visibility": true,
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ incompleteMetafieldDeviceMetadataField }}",
-            "descriptions": {
-                "singular": "Device Metadata Email Lookup"
-            }
-        },
-        {
+            "@id": "\/api\/3\/attribute_metadatas\/b0839f55-9dbe-41b0-90ee-50c960c16935",
             "@type": "AttributeMetadata",
             "type": "boolean",
             "name": "incompleteMetafieldEmailEnable",
@@ -1593,12 +1608,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "b0839f55-9dbe-41b0-90ee-50c960c16935",
             "displayName": "{{ incompleteMetafieldEmailEnable }}",
             "descriptions": {
                 "singular": "Incomplete Metafield Email Enable"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/054c62e9-b384-4279-a2fd-5a5b50d3e8e9",
             "@type": "AttributeMetadata",
             "type": "boolean",
             "name": "skipDeleteDevice",
@@ -1657,62 +1674,19 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "054c62e9-b384-4279-a2fd-5a5b50d3e8e9",
             "displayName": "{{ skipDeleteDevice }}",
             "descriptions": {
                 "singular": "Skip Delete Device"
             }
         },
         {
-            "@type": "AttributeMetadata",
-            "type": "string",
-            "name": "deviceMetadataMonitorRegex",
-            "length": null,
-            "orderIndex": 30,
-            "formType": "textarea",
-            "dataSource": null,
-            "searchable": true,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": false,
-            "inversedField": null,
-            "ownsRelationship": false,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761,
-                "_enableRange": false
-            },
-            "bulkAction": {
-                "allow": false,
-                "buttonText": "",
-                "buttonIcon": "",
-                "buttonClass": "btn btn-default btn-sm"
-            },
-            "dataSourceFilters": null,
-            "defaultValue": null,
-            "tooltip": "Create Device Metadata Regex Rules that ensure metadata meets expectations before continuing.",
-            "visibility": true,
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ deviceMetadataMonitorRegex }}",
-            "descriptions": {
-                "singular": "Device Metadata Monitor Regex"
-            }
-        },
-        {
+            "@id": "\/api\/3\/attribute_metadatas\/78d6467f-fec9-4d58-b01e-e7716c0be41d",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "deviceMetadataMonitorInterval",
             "length": null,
-            "orderIndex": 31,
+            "orderIndex": 30,
             "formType": "integer",
             "dataSource": null,
             "searchable": true,
@@ -1746,9 +1720,56 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "78d6467f-fec9-4d58-b01e-e7716c0be41d",
             "displayName": "{{ deviceMetadataMonitorInterval }}",
             "descriptions": {
                 "singular": "Device Metadata Monitor Interval"
+            }
+        },
+        {
+            "@id": "\/api\/3\/attribute_metadatas\/155dc0a2-0a3d-4376-a36f-4644909e9e15",
+            "@type": "AttributeMetadata",
+            "type": "object",
+            "name": "deviceMetadataMonitorRegex",
+            "length": null,
+            "orderIndex": 31,
+            "formType": "object",
+            "dataSource": null,
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": false,
+            "inversedField": null,
+            "ownsRelationship": false,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761
+            },
+            "bulkAction": {
+                "allow": false,
+                "buttonText": "",
+                "buttonIcon": "",
+                "buttonClass": "btn btn-default btn-sm"
+            },
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "uuid": "155dc0a2-0a3d-4376-a36f-4644909e9e15",
+            "displayName": "{{ deviceMetadataMonitorRegex }}",
+            "descriptions": {
+                "singular": "Device Metadata Monitor Regex"
             }
         }
     ],
