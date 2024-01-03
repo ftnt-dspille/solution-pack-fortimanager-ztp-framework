@@ -1,0 +1,209 @@
+[
+  {
+    "@type": "ExportTemplate",
+    "name": "ZTPF-Export-Records",
+    "lastExportDate": 1704301252.890863,
+    "options": {
+      "roles": [],
+      "rules": [],
+      "teams": [],
+      "views": [],
+      "actors": [],
+      "modules": [
+        {
+          "value": "devices",
+          "includedAttributes": [
+            "connectorConfig",
+            "managers",
+            "deviceName",
+            "hostName",
+            "aDOM",
+            "vDOM",
+            "sn",
+            "platform",
+            "firmware",
+            "connectionStatus",
+            "connectionStatusHTML",
+            "managementMode",
+            "managementModeHTML",
+            "configStatus",
+            "configStatusHTML",
+            "configDBStatus",
+            "configDBStatusHTML",
+            "deviceIP",
+            "provisioningTemplates",
+            "provisioningTemplatesHTML",
+            "policyPackage",
+            "policyPackageStatus",
+            "policyPackageHTML",
+            "deviceMetadata",
+            "deviceMetadataHTML",
+            "deviceMetafieldCompleted",
+            "deviceMetafieldTotal",
+            "description",
+            "provisioningTemplatesStatus",
+            "zTPProfiles",
+            "zTPPhase",
+            "zTPPhaseStarted",
+            "zTPPhaseCompleted",
+            "zTPPhaseLast",
+            "zTPStatus",
+            "zTPStatusHTML",
+            "deviceGroups",
+            "reportMarkdown",
+            "sourceData",
+            "metafieldTemplates",
+            "scripts",
+            "comments"
+          ]
+        },
+        {
+          "value": "managers",
+          "includedAttributes": [
+            "managerName",
+            "managerIP",
+            "scripts",
+            "adminStatus",
+            "firmware",
+            "adminRpcUser",
+            "adminRpcPassword",
+            "adminUser",
+            "adminPassword",
+            "platform",
+            "timeZone",
+            "sN",
+            "licenseStatus",
+            "aDOMMode",
+            "maxDevices",
+            "maxADOMS",
+            "description",
+            "managerMetadata",
+            "sourceData",
+            "comments",
+            "devices"
+          ]
+        },
+        {
+          "value": "metafield_templates",
+          "includedAttributes": [
+            "orderPriority",
+            "name",
+            "description",
+            "metafieldTemplate",
+            "metadataSources",
+            "zTPProfiles",
+            "devices",
+            "scripts"
+          ]
+        },
+        {
+          "value": "scripts",
+          "includedAttributes": [
+            "orderPriority",
+            "scriptName",
+            "description",
+            "scriptType",
+            "script",
+            "metadataSources",
+            "metafieldTemplates",
+            "devices",
+            "managers",
+            "zTPProfiles"
+          ]
+        },
+        {
+          "value": "z_t_p_profiles",
+          "includedAttributes": [
+            "name",
+            "profileMode",
+            "description",
+            "scripts",
+            "metafieldTemplates",
+            "devices",
+            "orderPriority",
+            "assignmentMode",
+            "assignmentSearchType",
+            "assignmentSearchField",
+            "assignmentSearch",
+            "assignmentSearchMetadataSources",
+            "aDOM",
+            "deviceGroups",
+            "provisioningTemplateGroup",
+            "policyPackage",
+            "zTPStepMap",
+            "zTPPhaseStart",
+            "zTPProfileNext",
+            "clearLinkedMetafieldTemplates",
+            "clearLinkedScripts",
+            "clearDeviceMetadata",
+            "retainProfileAssignment",
+            "exportMetadataToFortiManager",
+            "incompleteMetafieldEmail",
+            "deviceMetadataEmailLookup",
+            "clearDeviceReports",
+            "incompleteMetafieldEmailEnable",
+            "skipDeleteDevice",
+            "deviceMetadataMonitorInterval",
+            "deviceMetadataMonitorRegex"
+          ]
+        }
+      ],
+      "reports": [],
+      "widgets": [],
+      "connectors": [],
+      "dashboards": [],
+      "recordSets": [
+        {
+          "type": "devices",
+          "label": "Devices",
+          "query": null,
+          "include": true,
+          "includeCorrelations": true
+        },
+        {
+          "type": "managers",
+          "label": "Managers",
+          "query": null,
+          "include": true,
+          "includeCorrelations": true
+        },
+        {
+          "type": "metafield_templates",
+          "label": "Metafield Templates",
+          "query": null,
+          "include": true,
+          "includeCorrelations": true
+        },
+        {
+          "type": "scripts",
+          "label": "Scripts",
+          "query": null,
+          "include": true,
+          "includeCorrelations": true
+        },
+        {
+          "type": "z_t_p_profiles",
+          "label": "ZTP Profiles",
+          "query": null,
+          "include": true,
+          "includeCorrelations": true
+        }
+      ],
+      "appSettings": [],
+      "ruleChannels": [],
+      "picklistNames": [],
+      "viewTemplates": [],
+      "playbookBlocks": [],
+      "globalVariables": [],
+      "playbookCollections": []
+    },
+    "type": "Export Wizard",
+    "solutionPack": null,
+    "uuid": "e06be846-44c9-4a1a-ba69-21217f9d81cc",
+    "id": 8,
+    "createUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
+    "createDate": 1704293776.893113,
+    "modifyUser": "/api/3/people/3451141c-bac6-467c-8d72-85e0fab569ce",
+    "modifyDate": 1704301249.876912
+  }
+]
