@@ -3,7 +3,7 @@
 
 # Upgrade from 1.0.x to 1.2
 
-Upgrading from version 1.0.x to 1.2.0 changes some field types that cannot be directly converted. This requires administrative pre-setup steps before performing an upgrade to be successful. If you have records the `Managers`, `Devices`, `Metafield Templates`, `Scripts`, or `ZTP Profile` then you need to export these records before performing the 
+Upgrading from version 1.0.x to 1.2.0 changes some field types that cannot be directly converted. This requires administrative pre-setup steps before performing an upgrade to be successful. If you have records the `Managers`, `Devices`, `Metafield Templates`, `Scripts`, or `ZTP Profile` then you need to export these records using the steps in `Pre-Steps Steps to Preserve Existing Records` before performing the upgrade. 
 
 ## Pre-Steps Steps to Preserve Existing Records
 
