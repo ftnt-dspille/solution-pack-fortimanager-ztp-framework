@@ -73,6 +73,33 @@
         },
         {
             "@type": "WorkflowStep",
+            "name": "custom_script_result_process",
+            "description": null,
+            "arguments": {
+                "for_each": {
+                    "item": "{{vars.device_record_list}}",
+                    "parallel": false,
+                    "condition": ""
+                },
+                "arguments": {
+                    "record_id": "{{vars.item}}",
+                    "input_json": "{{vars.template_rendered.output}}"
+                },
+                "apply_async": false,
+                "step_variables": [],
+                "pass_parent_env": false,
+                "pass_input_record": false,
+                "workflowReference": "\/api\/3\/workflows\/eb24a673-8ed4-4271-9f5c-44a8affa375d"
+            },
+            "status": null,
+            "top": "380",
+            "left": "1960",
+            "stepType": "\/api\/3\/workflow_step_types\/74932bdc-b8b6-4d24-88c4-1a4dfbc524f3",
+            "group": null,
+            "uuid": "66d2f529-0c9c-45e4-8d1d-49810b971d9b"
+        },
+        {
+            "@type": "WorkflowStep",
             "name": "delete_script",
             "description": null,
             "arguments": {
@@ -301,8 +328,9 @@
                         "vDOM",
                         "policyPackage",
                         "zTPProfiles",
+                        "reportMarkdown",
                         "id",
-                        "reportMarkdown"
+                        "description"
                     ]
                 },
                 "module": "devices?$limit=5000&$relationships=true&$fsr_max_relation_count=100",
@@ -375,7 +403,7 @@
         },
         {
             "@type": "WorkflowStep",
-            "name": "Is Report Script",
+            "name": "Is Report or Custom Script",
             "description": null,
             "arguments": {
                 "conditions": [
@@ -386,12 +414,19 @@
                         "step_name": "create_script"
                     },
                     {
-                        "option": "Yes",
+                        "option": "Report",
                         "step_iri": "\/api\/3\/workflow_steps\/6ca6d4b9-33fe-45d3-a87a-e460a48920b2",
                         "condition": "{{ \"Report\" in vars.script_type }}",
                         "step_name": "setup_report_vars"
+                    },
+                    {
+                        "option": "Custom",
+                        "step_iri": "\/api\/3\/workflow_steps\/44588667-e23a-44a5-a0b9-48614f5d674a",
+                        "condition": "{{ \"Custom\" in vars.script_type }}",
+                        "step_name": "set custom vars"
                     }
-                ]
+                ],
+                "step_variables": []
             },
             "status": null,
             "top": "400",
@@ -410,7 +445,7 @@
                     "type": "\/api\/3\/picklists\/ff599189-3eeb-4c86-acb0-a7915e85ac3b",
                     "tenant": "",
                     "thread": false,
-                    "content": "<p>Template Generated from {{vars.input.params['script_record_name']}}:<\/p>\n<p>&nbsp;<\/p>\n<pre>{%- for l in vars.steps.render_script.output.strip('\"').split('\\n') -%}\n{{l}}\n{% endfor %}\n<\/pre>",
+                    "content": "<p>Template Generated from {{vars.input.params['script_record_name']}}:<\/p>\n<p>&nbsp;<\/p>\n<pre>{%- if \"custom\" in vars.script_type|lower -%}<br>{{vars.steps.render_script.output|to_nice_json(indent=2)}}<br>{%- else -%}<br>{%- for l in vars.steps.render_script.output.strip('\"').split('\\n') -%}\n{{l}}\n{% endfor %}<br>{%- endif -%}\n<\/pre>",
                     "records": "{{vars.device_record_list}}"
                 },
                 "arguments": {
@@ -439,8 +474,8 @@
                 "params": "{{vars.input.params}}"
             },
             "status": null,
-            "top": "980",
-            "left": "1900",
+            "top": "900",
+            "left": "2180",
             "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
             "group": null,
             "uuid": "b6b0bf98-0523-46db-bb92-4194f82f373c"
@@ -474,6 +509,21 @@
         },
         {
             "@type": "WorkflowStep",
+            "name": "setup_customscript_vars",
+            "description": null,
+            "arguments": {
+                "device_report_list": "{{vars.steps.find_devices|json_query('[][\"@id\",deviceName,description]')}}",
+                "exec_script_results": "{\"output\":{\"msg\":\"Running Custom Script\",\"error\":False}}"
+            },
+            "status": null,
+            "top": "220",
+            "left": "1740",
+            "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+            "group": null,
+            "uuid": "44588667-e23a-44a5-a0b9-48614f5d674a"
+        },
+        {
+            "@type": "WorkflowStep",
             "name": "setup_env",
             "description": null,
             "arguments": {
@@ -498,7 +548,7 @@
                 "exec_script_results": "{\"output\":{\"msg\":\"Running Report\",\"error\":False}}"
             },
             "status": null,
-            "top": "240",
+            "top": "100",
             "left": "1680",
             "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
             "group": null,
@@ -548,6 +598,38 @@
         },
         {
             "@type": "WorkflowStep",
+            "name": "update_device_custom",
+            "description": null,
+            "arguments": {
+                "for_each": {
+                    "item": "{{vars.device_report_list}}",
+                    "__bulk": true,
+                    "parallel": false,
+                    "condition": "",
+                    "batch_size": 100
+                },
+                "resource": {
+                    "deviceName": "{% if \"devname\" in vars.template_rendered.output.record %}{{vars.template_rendered.output.record.devname}}{% endif %}",
+                    "description": "{%- if vars.item[2] != '' -%}\n{{vars.item[2]}}\n{% endif -%}\n{% if \"description\" in vars.template_rendered.output.record -%}\n{{vars.template_rendered.output.record.description}}\n{%- endif %}"
+                },
+                "operation": "Append",
+                "collection": "{{vars.item[0]}}",
+                "__recommend": [],
+                "collectionType": "\/api\/3\/devices",
+                "fieldOperation": {
+                    "recordTags": "Append"
+                },
+                "step_variables": []
+            },
+            "status": null,
+            "top": "500",
+            "left": "2460",
+            "stepType": "\/api\/3\/workflow_step_types\/b593663d-7d13-40ce-a3a3-96dece928722",
+            "group": null,
+            "uuid": "d13cd303-bba3-4499-a970-b0f043fc3777"
+        },
+        {
+            "@type": "WorkflowStep",
             "name": "update_device_report",
             "description": null,
             "arguments": {
@@ -571,8 +653,8 @@
                 "step_variables": []
             },
             "status": null,
-            "top": "340",
-            "left": "1680",
+            "top": "100",
+            "left": "2220",
             "stepType": "\/api\/3\/workflow_step_types\/b593663d-7d13-40ce-a3a3-96dece928722",
             "group": null,
             "uuid": "56bcbc44-accb-4ae6-bba6-8dbce210e690"
@@ -598,6 +680,16 @@
             "isExecuted": false,
             "group": null,
             "uuid": "230baf41-2986-4a65-8b11-eacf2a3ba936"
+        },
+        {
+            "@type": "WorkflowRoute",
+            "name": "custom_script_result_process -> return_results",
+            "targetStep": "\/api\/3\/workflow_steps\/b6b0bf98-0523-46db-bb92-4194f82f373c",
+            "sourceStep": "\/api\/3\/workflow_steps\/66d2f529-0c9c-45e4-8d1d-49810b971d9b",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "2d71301d-62d6-406e-a847-68f9a32ecb59"
         },
         {
             "@type": "WorkflowRoute",
@@ -741,6 +833,16 @@
         },
         {
             "@type": "WorkflowRoute",
+            "name": "Is Report or Custom Script -> set custom vars",
+            "targetStep": "\/api\/3\/workflow_steps\/44588667-e23a-44a5-a0b9-48614f5d674a",
+            "sourceStep": "\/api\/3\/workflow_steps\/dcfc815d-8c24-4f95-8c0e-b1d381785e83",
+            "label": "Custom",
+            "isExecuted": false,
+            "group": null,
+            "uuid": "afdc2691-d5ea-44e0-8240-07b8fc39247e"
+        },
+        {
+            "@type": "WorkflowRoute",
             "name": "Is Report Script -> create_script",
             "targetStep": "\/api\/3\/workflow_steps\/f3cc1648-6719-4330-a5cb-d9680a71fdec",
             "sourceStep": "\/api\/3\/workflow_steps\/dcfc815d-8c24-4f95-8c0e-b1d381785e83",
@@ -754,7 +856,7 @@
             "name": "Is Report Script -> setup_report_vars",
             "targetStep": "\/api\/3\/workflow_steps\/6ca6d4b9-33fe-45d3-a87a-e460a48920b2",
             "sourceStep": "\/api\/3\/workflow_steps\/dcfc815d-8c24-4f95-8c0e-b1d381785e83",
-            "label": "Yes",
+            "label": "Report",
             "isExecuted": false,
             "group": null,
             "uuid": "b2c3ac6c-4485-4836-bd26-78d0bb0b7f39"
@@ -798,6 +900,16 @@
             "isExecuted": false,
             "group": null,
             "uuid": "47e35ddf-419d-4db9-9ddc-363d086c46df"
+        },
+        {
+            "@type": "WorkflowRoute",
+            "name": "setup_customscript_vars -> custom_script_result_process",
+            "targetStep": "\/api\/3\/workflow_steps\/66d2f529-0c9c-45e4-8d1d-49810b971d9b",
+            "sourceStep": "\/api\/3\/workflow_steps\/44588667-e23a-44a5-a0b9-48614f5d674a",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "1198b06e-5d85-467b-9762-5415c8947a4a"
         },
         {
             "@type": "WorkflowRoute",
