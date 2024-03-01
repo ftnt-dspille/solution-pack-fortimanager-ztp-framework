@@ -1,6 +1,6 @@
 {
     "@context": "\/api\/3\/contexts\/StagingModelMetadata",
-    "@id": "\/api\/3\/staging_model_metadatas\/701301ea-1fdb-42a1-b0c4-688745f2fa22",
+    "@id": "\/api\/3\/staging_model_metadatas\/8a4d6b03-c29e-4ac3-a467-faf4f77cdb7a",
     "@type": "StagingModelMetadata",
     "type": "managers",
     "parentType": null,
@@ -25,6 +25,7 @@
     "writable": true,
     "attributes": [
         {
+            "@id": "\/api\/3\/attribute_metadatas\/e22890b0-bd73-424a-aa51-209b76111b3a",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "managerMetadata",
@@ -63,12 +64,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "e22890b0-bd73-424a-aa51-209b76111b3a",
             "displayName": "{{ managerMetadata }}",
             "descriptions": {
                 "singular": "Manager Metadata"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/c7953c0e-8a53-4ad8-b619-f3503635e95d",
             "@type": "AttributeMetadata",
             "type": "scripts",
             "name": "scripts",
@@ -104,12 +107,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "c7953c0e-8a53-4ad8-b619-f3503635e95d",
             "displayName": "{{ scripts }}",
             "descriptions": {
                 "singular": "Scripts"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/c2115980-65ab-4156-947e-2ec313e48e9b",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "adminStatus",
@@ -177,12 +182,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "c2115980-65ab-4156-947e-2ec313e48e9b",
             "displayName": "{{ adminStatus }}",
             "descriptions": {
                 "singular": "Admin Status"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/906addff-5eb3-488e-b030-f43186af523a",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "managerName",
@@ -222,12 +229,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "906addff-5eb3-488e-b030-f43186af523a",
             "displayName": "{{ managerName }}",
             "descriptions": {
                 "singular": "Manager Name"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/817e9cad-6551-497a-b34c-d6e3c7a4eb4f",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "managerIP",
@@ -267,12 +276,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "817e9cad-6551-497a-b34c-d6e3c7a4eb4f",
             "displayName": "{{ managerIP }}",
             "descriptions": {
                 "singular": "Manager IP"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/4c7eee95-c4b8-42df-a2b5-0ddfbdd3c282",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "firmware",
@@ -311,12 +322,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "4c7eee95-c4b8-42df-a2b5-0ddfbdd3c282",
             "displayName": "{{ firmware }}",
             "descriptions": {
                 "singular": "Firmware"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/69e7c973-8213-43dc-84ed-f73964a2f84a",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "adminRpcUser",
@@ -356,12 +369,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "69e7c973-8213-43dc-84ed-f73964a2f84a",
             "displayName": "{{ adminRpcUser }}",
             "descriptions": {
                 "singular": "Admin RPC User"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/5d22b992-d544-4fff-8bcc-33ac2df12974",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "adminRpcPassword",
@@ -401,12 +416,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "5d22b992-d544-4fff-8bcc-33ac2df12974",
             "displayName": "{{ adminRpcPassword }}",
             "descriptions": {
                 "singular": "Admin RPC Password"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/4b902077-c94c-46ea-a9b0-ffb680e19459",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "adminUser",
@@ -446,12 +463,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "4b902077-c94c-46ea-a9b0-ffb680e19459",
             "displayName": "{{ adminUser }}",
             "descriptions": {
                 "singular": "Admin User"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/ffb51732-aa98-47ab-a7f2-9a6641813a63",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "adminPassword",
@@ -491,12 +510,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "ffb51732-aa98-47ab-a7f2-9a6641813a63",
             "displayName": "{{ adminPassword }}",
             "descriptions": {
                 "singular": "Admin Password"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/c792578c-eeec-48cf-82c6-2b5bb1bd9ff6",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "platform",
@@ -536,12 +557,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "c792578c-eeec-48cf-82c6-2b5bb1bd9ff6",
             "displayName": "{{ platform }}",
             "descriptions": {
                 "singular": "Platform"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/a55565fb-b3f6-4803-8491-d686a095cd22",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "timeZone",
@@ -581,12 +604,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "a55565fb-b3f6-4803-8491-d686a095cd22",
             "displayName": "{{ timeZone }}",
             "descriptions": {
                 "singular": "Time Zone"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/6ccbf91c-72cc-4503-9b34-0dd96384c846",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "sN",
@@ -626,12 +651,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "6ccbf91c-72cc-4503-9b34-0dd96384c846",
             "displayName": "{{ sN }}",
             "descriptions": {
                 "singular": "SN"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/c9f66235-4f1c-4191-a7fe-272a033f7d7c",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "licenseStatus",
@@ -670,12 +697,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "c9f66235-4f1c-4191-a7fe-272a033f7d7c",
             "displayName": "{{ licenseStatus }}",
             "descriptions": {
                 "singular": "License Status"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/012366c9-b7bf-4ac7-b17d-bf16d6ca2f97",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "aDOMMode",
@@ -714,12 +743,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "012366c9-b7bf-4ac7-b17d-bf16d6ca2f97",
             "displayName": "{{ aDOMMode }}",
             "descriptions": {
                 "singular": "ADOM Mode"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/7159adeb-270a-4c23-ba4b-935c4cf7bf82",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "maxDevices",
@@ -758,12 +789,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "7159adeb-270a-4c23-ba4b-935c4cf7bf82",
             "displayName": "{{ maxDevices }}",
             "descriptions": {
                 "singular": "Max Devices"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/a855bfe7-4420-4630-b4ba-4617f666f709",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "maxADOMS",
@@ -802,12 +835,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "a855bfe7-4420-4630-b4ba-4617f666f709",
             "displayName": "{{ maxADOMS }}",
             "descriptions": {
                 "singular": "Max ADOMS"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/ff6e5d6d-6135-40c7-a9c4-f3afb782df54",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "sourceData",
@@ -846,12 +881,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "ff6e5d6d-6135-40c7-a9c4-f3afb782df54",
             "displayName": "{{ sourceData }}",
             "descriptions": {
                 "singular": "Source Data"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/82d4a4bb-962e-4d6e-9c1c-4de47b949c48",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "description",
@@ -891,12 +928,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "82d4a4bb-962e-4d6e-9c1c-4de47b949c48",
             "displayName": "{{ description }}",
             "descriptions": {
                 "singular": "Description"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/1001916f-674e-46ce-8101-26c64e83e17f",
             "@type": "AttributeMetadata",
             "type": "comments",
             "name": "comments",
@@ -932,12 +971,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "1001916f-674e-46ce-8101-26c64e83e17f",
             "displayName": "{{ comments }}",
             "descriptions": {
                 "singular": "Comments"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/e8d1b008-1a6e-4fd3-bddf-19ac1b98dcde",
             "@type": "AttributeMetadata",
             "type": "devices",
             "name": "devices",
@@ -974,6 +1015,7 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "e8d1b008-1a6e-4fd3-bddf-19ac1b98dcde",
             "displayName": "{{ devices }}",
             "descriptions": {
                 "singular": "Devices"
@@ -993,7 +1035,7 @@
     "archivalFilters": [],
     "replicationFilters": [],
     "enableReplication": true,
-    "uuid": "701301ea-1fdb-42a1-b0c4-688745f2fa22",
+    "uuid": "8a4d6b03-c29e-4ac3-a467-faf4f77cdb7a",
     "displayName": "{{ managerName }}",
     "descriptions": {
         "singular": "Manager",

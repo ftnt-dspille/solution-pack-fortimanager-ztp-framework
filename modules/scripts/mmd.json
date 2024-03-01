@@ -1,6 +1,6 @@
 {
     "@context": "\/api\/3\/contexts\/StagingModelMetadata",
-    "@id": "\/api\/3\/staging_model_metadatas\/f19b9abd-8d54-4e2b-af19-12962cadccdc",
+    "@id": "\/api\/3\/staging_model_metadatas\/71ed5d4a-e616-409f-956d-a611f14824f5",
     "@type": "StagingModelMetadata",
     "type": "scripts",
     "parentType": null,
@@ -34,6 +34,7 @@
     "writable": true,
     "attributes": [
         {
+            "@id": "\/api\/3\/attribute_metadatas\/1ccd094d-e39a-4646-bda0-baa68cb870f1",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "orderPriority",
@@ -72,12 +73,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "1ccd094d-e39a-4646-bda0-baa68cb870f1",
             "displayName": "{{ orderPriority }}",
             "descriptions": {
                 "singular": "Order Priority"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/3be746fc-bda7-47cc-88b6-0cf909158bea",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "scriptName",
@@ -117,12 +120,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "3be746fc-bda7-47cc-88b6-0cf909158bea",
             "displayName": "{{ scriptName }}",
             "descriptions": {
                 "singular": "Name"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/3f5ad918-fa35-4344-bb57-6d2c6ce14b50",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "description",
@@ -162,12 +167,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "3f5ad918-fa35-4344-bb57-6d2c6ce14b50",
             "displayName": "{{ description }}",
             "descriptions": {
                 "singular": "Description"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/21ad46f5-9409-48b3-a587-c8c7feeeebdb",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "scriptType",
@@ -243,12 +250,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "21ad46f5-9409-48b3-a587-c8c7feeeebdb",
             "displayName": "{{ scriptType }}",
             "descriptions": {
                 "singular": "Type"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/8a94019b-81c0-4b3d-8020-c69da35d3601",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "script",
@@ -288,12 +297,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "8a94019b-81c0-4b3d-8020-c69da35d3601",
             "displayName": "{{ script }}",
             "descriptions": {
                 "singular": "Script"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/aeecba82-6d40-44bb-9c5a-1727ff100479",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "scriptMetadataSources",
@@ -333,12 +344,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "aeecba82-6d40-44bb-9c5a-1727ff100479",
             "displayName": "{{ scriptMetadataSources }}",
             "descriptions": {
                 "singular": "Metadata Sources"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/3bc2c00f-f6a3-4f20-b663-c3f7831d7d8b",
             "@type": "AttributeMetadata",
             "type": "metafield_templates",
             "name": "metafieldTemplates",
@@ -374,12 +387,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "3bc2c00f-f6a3-4f20-b663-c3f7831d7d8b",
             "displayName": "{{ metafieldTemplates }}",
             "descriptions": {
                 "singular": "Metafield Templates"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/681186c4-3eae-4962-bfa8-7fc8bae5b21d",
             "@type": "AttributeMetadata",
             "type": "devices",
             "name": "devices",
@@ -411,12 +426,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "681186c4-3eae-4962-bfa8-7fc8bae5b21d",
             "displayName": "{{ devices }}",
             "descriptions": {
                 "singular": "Devices"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/e1180ce6-0acc-4aaf-a520-d4c8fb38be13",
             "@type": "AttributeMetadata",
             "type": "managers",
             "name": "managers",
@@ -448,12 +465,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "e1180ce6-0acc-4aaf-a520-d4c8fb38be13",
             "displayName": "{{Managers}}",
             "descriptions": {
                 "singular": "Managers"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/09edb8f6-ca94-4dff-9ad9-d820a3a03b96",
             "@type": "AttributeMetadata",
             "type": "z_t_p_profiles",
             "name": "zTPProfiles",
@@ -485,6 +504,7 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "09edb8f6-ca94-4dff-9ad9-d820a3a03b96",
             "displayName": "{{ zTPProfiles }}",
             "descriptions": {
                 "singular": "ZTP Profiles"
@@ -504,7 +524,7 @@
     "archivalFilters": [],
     "replicationFilters": [],
     "enableReplication": true,
-    "uuid": "f19b9abd-8d54-4e2b-af19-12962cadccdc",
+    "uuid": "71ed5d4a-e616-409f-956d-a611f14824f5",
     "displayName": "{{ scriptName }}",
     "descriptions": {
         "singular": "Script",
