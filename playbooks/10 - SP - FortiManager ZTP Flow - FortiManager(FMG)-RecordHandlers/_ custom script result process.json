@@ -20,28 +20,62 @@
     "steps": [
         {
             "@type": "WorkflowStep",
+            "name": "get device data",
+            "description": null,
+            "arguments": {
+                "query": {
+                    "sort": [],
+                    "limit": 30,
+                    "logic": "AND",
+                    "filters": [
+                        {
+                            "type": "primitive",
+                            "field": "uuid",
+                            "value": "{{vars.record_parts[-1]}}",
+                            "operator": "eq",
+                            "_operator": "eq"
+                        }
+                    ],
+                    "__selectFields": [
+                        "deviceName",
+                        "id"
+                    ]
+                },
+                "module": "devices?$limit=1",
+                "checkboxFields": true,
+                "step_variables": []
+            },
+            "status": null,
+            "top": "300",
+            "left": "520",
+            "stepType": "\/api\/3\/workflow_step_types\/b593663d-7d13-40ce-a3a3-96dece928770",
+            "group": null,
+            "uuid": "ec5a529b-e13c-4dc6-8f9c-ef9428b8cf9e"
+        },
+        {
+            "@type": "WorkflowStep",
             "name": "record_type",
             "description": null,
             "arguments": {
                 "conditions": [
                     {
-                        "option": "Device",
-                        "step_iri": "\/api\/3\/workflow_steps\/442f4185-0060-4224-b3ab-374183d4a01c",
-                        "condition": "{{ \"\/devices\/\" in vars.record_id }}",
-                        "step_name": "update_device_custom"
-                    },
-                    {
                         "option": "Unknown",
                         "default": true,
                         "step_iri": "\/api\/3\/workflow_steps\/99e57919-7ce8-4ed7-a98b-29b194e93415",
                         "step_name": "skip"
+                    },
+                    {
+                        "option": "Device",
+                        "step_iri": "\/api\/3\/workflow_steps\/ec5a529b-e13c-4dc6-8f9c-ef9428b8cf9e",
+                        "condition": "{{ vars.record_type == \"device\" }}",
+                        "step_name": "get device data"
                     }
                 ],
                 "step_variables": []
             },
             "status": null,
             "top": "160",
-            "left": "500",
+            "left": "520",
             "stepType": "\/api\/3\/workflow_step_types\/12254cf5-5db7-4b1a-8cb1-3af081924b28",
             "group": null,
             "uuid": "40938614-e94d-4d89-82c4-0dd686983b4f"
@@ -60,15 +94,33 @@
         },
         {
             "@type": "WorkflowStep",
+            "name": "set device data",
+            "description": null,
+            "arguments": {
+                "upd_comment": "{%- if \"comment\" in vars.input_json.record %}\n{{vars.input_json.record.comment}}\n{%- else %}\nCustom Script Complete\n{%- endif %}",
+                "upd_devname": "{% if \"devname\" in vars.custom_input.record -%}\n{{vars.custom_input.record.devname}}\n{%- else -%}\n{{vars.steps.get_device_data[0].deviceName}}\n{%- endif -%}",
+                "upd_description": "{%- if \"description\" in vars.input_json.record %}\n{{vars.input_json.record.description}}\n{%- endif %}"
+            },
+            "status": null,
+            "top": "340",
+            "left": "880",
+            "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+            "group": null,
+            "uuid": "cb59289a-1928-4dec-902d-e536cb207344"
+        },
+        {
+            "@type": "WorkflowStep",
             "name": "setup_vars",
             "description": null,
             "arguments": {
                 "record_id": "{{vars.input.params['record_id']}}",
-                "input_json": "{{vars.input.params['input_json']|to_json}}"
+                "record_type": "{%- set url = vars.input.params['record_id'] -%}\n{%- if url | regex_search(\"devices\") -%}\ndevice\n{%- endif -%}",
+                "custom_input": "{{vars.input.params['input_json']|to_json}}",
+                "record_parts": "{{ vars.input.params['record_id']|split(\"\/\") }}"
             },
             "status": null,
             "top": "40",
-            "left": "340",
+            "left": "360",
             "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
             "group": null,
             "uuid": "df955be7-3e60-411e-9c8f-ae04491541c6"
@@ -116,12 +168,12 @@
                     "type": "\/api\/3\/picklists\/ff599189-3eeb-4c86-acb0-a7915e85ac3b",
                     "tenant": "",
                     "thread": false,
-                    "content": "<p>{%- if \"comment\" in vars.input_json.record %}<br>{{vars.input_json.record.comment}}<\/p>\n<p>{%- else %}<\/p>\n<p>Custom Script Complete<br>{%- endif %}<\/p>",
+                    "content": "<p>{{vars.upd_comment}}<\/p>",
                     "records": "{{vars.record_id}}"
                 },
                 "resource": {
-                    "deviceName": "{% if \"devname\" in vars.input_json.record %}{{vars.input_json.record.devname}}{% endif %}",
-                    "description": "{%- if \"description\" in vars.input_json.record %}\n{{vars.input_json.record.description}}\n{%- endif %}"
+                    "deviceName": "{{vars.upd_devname}}",
+                    "description": "{{vars.upd_description}}"
                 },
                 "operation": "Append",
                 "collection": "{{vars.record_id}}",
@@ -133,14 +185,34 @@
                 "step_variables": []
             },
             "status": null,
-            "top": "260",
-            "left": "500",
+            "top": "400",
+            "left": "520",
             "stepType": "\/api\/3\/workflow_step_types\/b593663d-7d13-40ce-a3a3-96dece928722",
             "group": null,
             "uuid": "442f4185-0060-4224-b3ab-374183d4a01c"
         }
     ],
     "routes": [
+        {
+            "@type": "WorkflowRoute",
+            "name": "get device data -> set device data",
+            "targetStep": "\/api\/3\/workflow_steps\/cb59289a-1928-4dec-902d-e536cb207344",
+            "sourceStep": "\/api\/3\/workflow_steps\/ec5a529b-e13c-4dc6-8f9c-ef9428b8cf9e",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "55f93966-689f-4e1c-bcff-584cf09fd7df"
+        },
+        {
+            "@type": "WorkflowRoute",
+            "name": "record_type -> get device data",
+            "targetStep": "\/api\/3\/workflow_steps\/ec5a529b-e13c-4dc6-8f9c-ef9428b8cf9e",
+            "sourceStep": "\/api\/3\/workflow_steps\/40938614-e94d-4d89-82c4-0dd686983b4f",
+            "label": "Device",
+            "isExecuted": false,
+            "group": null,
+            "uuid": "0c03e4c1-ac08-44ea-b2a6-b2b3f8173257"
+        },
         {
             "@type": "WorkflowRoute",
             "name": "record_type -> skip",
@@ -153,13 +225,13 @@
         },
         {
             "@type": "WorkflowRoute",
-            "name": "record_type -> update_device_custom",
+            "name": "set device data -> update_device_custom",
             "targetStep": "\/api\/3\/workflow_steps\/442f4185-0060-4224-b3ab-374183d4a01c",
-            "sourceStep": "\/api\/3\/workflow_steps\/40938614-e94d-4d89-82c4-0dd686983b4f",
-            "label": "Device",
+            "sourceStep": "\/api\/3\/workflow_steps\/cb59289a-1928-4dec-902d-e536cb207344",
+            "label": null,
             "isExecuted": false,
             "group": null,
-            "uuid": "ba704ad8-6bf9-4c5f-84a5-c4ed498db002"
+            "uuid": "2d391590-c762-4e3c-b7de-ef21f494d340"
         },
         {
             "@type": "WorkflowRoute",

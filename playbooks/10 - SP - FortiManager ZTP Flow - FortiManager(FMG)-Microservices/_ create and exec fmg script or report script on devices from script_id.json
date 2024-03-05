@@ -598,38 +598,6 @@
         },
         {
             "@type": "WorkflowStep",
-            "name": "update_device_custom",
-            "description": null,
-            "arguments": {
-                "for_each": {
-                    "item": "{{vars.device_report_list}}",
-                    "__bulk": true,
-                    "parallel": false,
-                    "condition": "",
-                    "batch_size": 100
-                },
-                "resource": {
-                    "deviceName": "{% if \"devname\" in vars.template_rendered.output.record %}{{vars.template_rendered.output.record.devname}}{% endif %}",
-                    "description": "{%- if vars.item[2] != '' -%}\n{{vars.item[2]}}\n{% endif -%}\n{% if \"description\" in vars.template_rendered.output.record -%}\n{{vars.template_rendered.output.record.description}}\n{%- endif %}"
-                },
-                "operation": "Append",
-                "collection": "{{vars.item[0]}}",
-                "__recommend": [],
-                "collectionType": "\/api\/3\/devices",
-                "fieldOperation": {
-                    "recordTags": "Append"
-                },
-                "step_variables": []
-            },
-            "status": null,
-            "top": "500",
-            "left": "2460",
-            "stepType": "\/api\/3\/workflow_step_types\/b593663d-7d13-40ce-a3a3-96dece928722",
-            "group": null,
-            "uuid": "d13cd303-bba3-4499-a970-b0f043fc3777"
-        },
-        {
-            "@type": "WorkflowStep",
             "name": "update_device_report",
             "description": null,
             "arguments": {

@@ -1,6 +1,6 @@
 {
     "@context": "\/api\/3\/contexts\/StagingModelMetadata",
-    "@id": "\/api\/3\/staging_model_metadatas\/fbda061b-070f-48b5-a834-2c459dad1813",
+    "@id": "\/api\/3\/staging_model_metadatas\/9c366b48-9176-4fc9-b13b-9913cd7e2fe9",
     "@type": "StagingModelMetadata",
     "type": "metafield_templates",
     "parentType": null,
@@ -34,7 +34,7 @@
     "writable": true,
     "attributes": [
         {
-            "@id": "\/api\/3\/attribute_metadatas\/ed4107d0-768a-4a51-bc5d-77ef38e70222",
+            "@id": "\/api\/3\/attribute_metadatas\/01d435ec-b260-4c8f-99b5-d4bdaa85ce78",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "orderPriority",
@@ -73,14 +73,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "ed4107d0-768a-4a51-bc5d-77ef38e70222",
+            "uuid": "01d435ec-b260-4c8f-99b5-d4bdaa85ce78",
             "displayName": "{{ orderPriority }}",
             "descriptions": {
                 "singular": "Order Priority"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/a883b437-30d8-436e-9af2-5b5d6a68a852",
+            "@id": "\/api\/3\/attribute_metadatas\/65d48833-d923-494e-aade-6b5cab620651",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "name",
@@ -120,14 +120,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "a883b437-30d8-436e-9af2-5b5d6a68a852",
+            "uuid": "65d48833-d923-494e-aade-6b5cab620651",
             "displayName": "{{ name }}",
             "descriptions": {
                 "singular": "Name"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/32400ef0-a448-4890-be3d-e326632104e2",
+            "@id": "\/api\/3\/attribute_metadatas\/39db9fd2-0eda-45f8-baf1-d1d592f51bdc",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "description",
@@ -167,14 +167,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "32400ef0-a448-4890-be3d-e326632104e2",
+            "uuid": "39db9fd2-0eda-45f8-baf1-d1d592f51bdc",
             "displayName": "{{ description }}",
             "descriptions": {
                 "singular": "Description"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/db4e4355-ce4a-4f58-b88d-7ee6622d523a",
+            "@id": "\/api\/3\/attribute_metadatas\/837fd063-17b7-4de8-8b9f-c339b04c7531",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "metafieldTemplate",
@@ -214,14 +214,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "db4e4355-ce4a-4f58-b88d-7ee6622d523a",
+            "uuid": "837fd063-17b7-4de8-8b9f-c339b04c7531",
             "displayName": "{{ metafieldTemplate }}",
             "descriptions": {
                 "singular": "Metafield Template"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/3ec9fb2b-9a78-400a-8aa1-d1cc2246681a",
+            "@id": "\/api\/3\/attribute_metadatas\/ce2ae92e-06e1-4939-8db9-2673ad27cdd5",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "metadataSources",
@@ -261,14 +261,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "3ec9fb2b-9a78-400a-8aa1-d1cc2246681a",
+            "uuid": "ce2ae92e-06e1-4939-8db9-2673ad27cdd5",
             "displayName": "{{ metadataSources }}",
             "descriptions": {
                 "singular": "Metadata Sources"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/71ee4fc0-d4ce-413d-873d-d34bd41364f3",
+            "@id": "\/api\/3\/attribute_metadatas\/c4ab09ca-037d-48b5-8138-ccf5601630d2",
             "@type": "AttributeMetadata",
             "type": "z_t_p_profiles",
             "name": "zTPProfiles",
@@ -300,14 +300,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "71ee4fc0-d4ce-413d-873d-d34bd41364f3",
+            "uuid": "c4ab09ca-037d-48b5-8138-ccf5601630d2",
             "displayName": "{{ zTPProfiles }}",
             "descriptions": {
                 "singular": "ZTP Profiles"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/4b0c065f-ab03-4971-8eb6-47f82afb80d7",
+            "@id": "\/api\/3\/attribute_metadatas\/d9d59b69-3a8d-40ee-8fca-a574de863965",
             "@type": "AttributeMetadata",
             "type": "devices",
             "name": "devices",
@@ -339,14 +339,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "4b0c065f-ab03-4971-8eb6-47f82afb80d7",
+            "uuid": "d9d59b69-3a8d-40ee-8fca-a574de863965",
             "displayName": "{{ devices }}",
             "descriptions": {
                 "singular": "Devices"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/ba8d954e-a0b9-4112-b5c4-460e9ad08bc2",
+            "@id": "\/api\/3\/attribute_metadatas\/68e5d614-10f0-4d7c-bf4f-33f43d36fd4c",
             "@type": "AttributeMetadata",
             "type": "scripts",
             "name": "scripts",
@@ -378,7 +378,7 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "ba8d954e-a0b9-4112-b5c4-460e9ad08bc2",
+            "uuid": "68e5d614-10f0-4d7c-bf4f-33f43d36fd4c",
             "displayName": "{{Scripts}}",
             "descriptions": {
                 "singular": "Scripts"
@@ -398,7 +398,7 @@
     "archivalFilters": [],
     "replicationFilters": [],
     "enableReplication": true,
-    "uuid": "fbda061b-070f-48b5-a834-2c459dad1813",
+    "uuid": "9c366b48-9176-4fc9-b13b-9913cd7e2fe9",
     "displayName": "{{ name }}",
     "descriptions": {
         "singular": "Metafield Template",
