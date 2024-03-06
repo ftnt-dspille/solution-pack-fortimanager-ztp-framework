@@ -14,7 +14,7 @@
 | Provisioning CLI Template | Uses Jinja in FortiSOAR to create a Provisioning CLI script in the FMG and associates it to this device using the Provisioning Template Group defined in this device. | 
 | Provisioning Jinja Template | Creates a Provisioning Jinja script in the FMG and associates it to this device using the Provisioning Template Group defined in this device. FortiSOAR will **not render the Jinja** as these are Jinja scripts that should be rendered by FMG. |
 | Report Markdown | Creates a locally hosted report output that gets appended to the `Report Markdown` field on the [Device](./devices.md) record.  | 
-| Custom | Custom scripts are designed to control the device record in FortiSOAR as well as kickoff any Metafield Sources that can be used to leverage any custom script. | 
+| [Custom](#custom-script-data) | Custom scripts are designed to control the device record in FortiSOAR as well as kickoff any Metafield Sources that can be used to leverage any custom script. | 
 
 ## Example Jinja Rendered CLI Template
 
