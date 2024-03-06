@@ -147,7 +147,7 @@
             "htmlEscape": false,
             "orphanRemoval": null,
             "readable": true,
-            "writeable": false,
+            "writeable": true,
             "identifier": null,
             "unique": false,
             "recommend": false,

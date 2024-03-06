@@ -5,6 +5,7 @@
 - 20240308 (1.0.3)
  - Aggregate changelog into monthly changes instead of daily changes. 
  - Add support for Custom Script Types. 
+ - Modified Device field `deviceName` to be writeable by playbooks for Custom Scripts to change. 
  - Update Docs to show Custom Script information. 
 
 - 20231228 (1.0.2)
