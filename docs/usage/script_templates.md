@@ -16,7 +16,7 @@
 | Report Markdown | Creates a locally hosted report output that gets appended to the `Report Markdown` field on the [Device](./devices.md) record.  | 
 | [Custom](#custom-script-data) | Custom scripts are designed to control the device record in FortiSOAR as well as kickoff any Metafield Sources that can be used to leverage any custom script. | 
 
-## Example Jinja Rendered CLI Template
+## Example Jinja Rendered CLI Templates
 
 Templates can be as simple as creating a config block and can be used to create CLI output with `DeviceDB`, `PolicyDB`, `Remote CLI`, and `Remote TCL` script types. 
 
