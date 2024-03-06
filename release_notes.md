@@ -1,5 +1,8 @@
 # What's New
 
+Release of 1.0.3:
+ - Add support for an exciting new Script Type: `Custom`
+
 Release of 1.0.2:
  - Add jinja vars support to ztp profile assignments and update docs to reflect this change.
 
