@@ -49,7 +49,7 @@ end
 
 ## Custom Script Data
 
-Custom scripts need to output a JSON to indicate what should be done to the device record. You can leverage the [Metafield Sourced](../usage/jinja_rendering_with_metafield_sources.md)
+Custom scripts need to output a JSON to indicate what should be done to the device record. You can leverage the [Metafield Sources](../usage/jinja_rendering_with_metafield_sources.md) to run custom solutions to augment any actions you need to perform within the `Run Link Scripts` in [ZTP Phases](ztp_profiles.md#ztp-phases). 
 
 ```
 {%- set idx = {} -%}
