@@ -1,11 +1,10 @@
 {
     "@context": "\/api\/3\/contexts\/StagingModelMetadata",
-    "@id": "\/api\/3\/staging_model_metadatas\/de5da960-f61b-4284-ae61-ef26a3b29890",
     "@type": "StagingModelMetadata",
     "type": "announcements",
     "parentType": null,
     "tableName": "announcements",
-    "ownable": true,
+    "ownable": false,
     "userOwnable": false,
     "queueable": false,
     "trackable": true,
@@ -17,6 +16,7 @@
     "writable": true,
     "attributes": [
         {
+            "@id": "\/api\/3\/attribute_metadatas\/2d523cd8-1db5-4539-b77e-d73589fb8afd",
             "@type": "AttributeMetadata",
             "type": "boolean",
             "name": "notifyOnEmail",
@@ -56,12 +56,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "2d523cd8-1db5-4539-b77e-d73589fb8afd",
             "displayName": "{{ notifyOnEmail }}",
             "descriptions": {
                 "singular": "Notify Responders On Email"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/a756be64-d40f-4caf-b72a-9ab002f0b4b0",
             "@type": "AttributeMetadata",
             "type": "warrooms",
             "name": "warrooms",
@@ -98,12 +100,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "a756be64-d40f-4caf-b72a-9ab002f0b4b0",
             "displayName": "{{ warrooms }}",
             "descriptions": {
                 "singular": "War Rooms"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/6a1e4c1c-4019-426c-8e1b-808ffb0c0c58",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "announcementCriticality",
@@ -171,12 +175,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "6a1e4c1c-4019-426c-8e1b-808ffb0c0c58",
             "displayName": "{{ announcementCriticality }}",
             "descriptions": {
                 "singular": "Criticality"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/1eb91a73-e8a0-4f27-a08a-a9e1d6206ba6",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "title",
@@ -215,12 +221,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "1eb91a73-e8a0-4f27-a08a-a9e1d6206ba6",
             "displayName": "{{ title }}",
             "descriptions": {
                 "singular": "Title"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/4629901e-7975-436f-bdc6-505dc26064ae",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "description",
@@ -259,12 +267,14 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "4629901e-7975-436f-bdc6-505dc26064ae",
             "displayName": "{{ description }}",
             "descriptions": {
                 "singular": "Description"
             }
         },
         {
+            "@id": "\/api\/3\/attribute_metadatas\/0ce815f9-e1c4-428a-9397-54009ff45f4a",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "announcementType",
@@ -336,6 +346,7 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
+            "uuid": "0ce815f9-e1c4-428a-9397-54009ff45f4a",
             "displayName": "{{ announcementType }}",
             "descriptions": {
                 "singular": "Announcement Type"
@@ -355,7 +366,6 @@
     "archivalFilters": [],
     "replicationFilters": [],
     "enableReplication": true,
-    "uuid": "de5da960-f61b-4284-ae61-ef26a3b29890",
     "displayName": "{{title}}",
     "descriptions": {
         "singular": "Announcement",

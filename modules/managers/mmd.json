@@ -1,6 +1,5 @@
 {
     "@context": "\/api\/3\/contexts\/StagingModelMetadata",
-    "@id": "\/api\/3\/staging_model_metadatas\/ee42eafe-9d1b-48ee-8a90-3ea2e98a3794",
     "@type": "StagingModelMetadata",
     "type": "managers",
     "parentType": null,
@@ -1035,7 +1034,6 @@
     "archivalFilters": [],
     "replicationFilters": [],
     "enableReplication": true,
-    "uuid": "ee42eafe-9d1b-48ee-8a90-3ea2e98a3794",
     "displayName": "{{ managerName }}",
     "descriptions": {
         "singular": "Manager",

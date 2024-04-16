@@ -1,6 +1,5 @@
 {
     "@context": "\/api\/3\/contexts\/StagingModelMetadata",
-    "@id": "\/api\/3\/staging_model_metadatas\/3b51b43d-30e8-4e6d-982f-4556814f2a1d",
     "@type": "StagingModelMetadata",
     "type": "devices",
     "parentType": null,
@@ -2348,7 +2347,6 @@
     "archivalFilters": [],
     "replicationFilters": [],
     "enableReplication": true,
-    "uuid": "3b51b43d-30e8-4e6d-982f-4556814f2a1d",
     "displayName": "{{ connectorConfig }} {{ deviceName }}",
     "descriptions": {
         "singular": "Device",

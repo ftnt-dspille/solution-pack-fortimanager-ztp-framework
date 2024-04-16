@@ -1,6 +1,5 @@
 {
     "@context": "\/api\/3\/contexts\/StagingModelMetadata",
-    "@id": "\/api\/3\/staging_model_metadatas\/9c366b48-9176-4fc9-b13b-9913cd7e2fe9",
     "@type": "StagingModelMetadata",
     "type": "metafield_templates",
     "parentType": null,
@@ -398,7 +397,6 @@
     "archivalFilters": [],
     "replicationFilters": [],
     "enableReplication": true,
-    "uuid": "9c366b48-9176-4fc9-b13b-9913cd7e2fe9",
     "displayName": "{{ name }}",
     "descriptions": {
         "singular": "Metafield Template",

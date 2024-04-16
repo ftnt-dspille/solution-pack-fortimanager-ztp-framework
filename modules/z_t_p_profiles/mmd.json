@@ -1,6 +1,5 @@
 {
     "@context": "\/api\/3\/contexts\/StagingModelMetadata",
-    "@id": "\/api\/3\/staging_model_metadatas\/b3b85192-e1b9-4411-a736-6bef9af247ea",
     "@type": "StagingModelMetadata",
     "type": "z_t_p_profiles",
     "parentType": null,
@@ -1827,7 +1826,6 @@
     "archivalFilters": [],
     "replicationFilters": [],
     "enableReplication": true,
-    "uuid": "b3b85192-e1b9-4411-a736-6bef9af247ea",
     "displayName": "{{ name }}",
     "descriptions": {
         "singular": "ZTP Profile",

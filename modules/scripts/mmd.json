@@ -1,6 +1,5 @@
 {
     "@context": "\/api\/3\/contexts\/StagingModelMetadata",
-    "@id": "\/api\/3\/staging_model_metadatas\/2cdc4a9a-e438-489c-9a3a-d53c00042359",
     "@type": "StagingModelMetadata",
     "type": "scripts",
     "parentType": null,
@@ -524,7 +523,6 @@
     "archivalFilters": [],
     "replicationFilters": [],
     "enableReplication": true,
-    "uuid": "2cdc4a9a-e438-489c-9a3a-d53c00042359",
     "displayName": "{{ scriptName }}",
     "descriptions": {
         "singular": "Script",

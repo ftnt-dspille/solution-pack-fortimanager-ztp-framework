@@ -2,6 +2,7 @@
 
 Release of 1.0.3:
  - Add support for an exciting new Script Type: `Custom`
+ - Modify ZTP Profile auto-assign to be more efficient and stop rendering device searches once the profile is found. 
 
 Release of 1.0.2:
  - Add jinja vars support to ztp profile assignments and update docs to reflect this change.

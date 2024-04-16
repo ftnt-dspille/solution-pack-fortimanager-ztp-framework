@@ -7,6 +7,8 @@
  - Add support for Custom Script Types. 
  - Modified Device field `deviceName` to be writeable by playbooks for Custom Scripts to change. 
  - Update Docs to show Custom Script information. 
+ - Alow system export rename of playbook files that had a `-` instead of `>`. 
+ - Update playbooks associated with the **Create New Device** trigger and automatic assignment of ZTP Profiles for better performance. 
 
 - 20231228 (1.0.2)
  - Add jinja vars support to ztp profile assignments and update docs to reflect this change.
