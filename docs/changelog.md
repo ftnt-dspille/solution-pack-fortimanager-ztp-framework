@@ -3,15 +3,15 @@
 
 # Change Log
 - 20240308 (1.0.3)
- - Aggregate changelog into monthly changes instead of daily changes. 
- - Add support for Custom Script Types. 
- - Modified Device field `deviceName` to be writeable by playbooks for Custom Scripts to change. 
- - Update Docs to show Custom Script information. 
- - Alow system export rename of playbook files that had a `-` instead of `>`. 
- - Update playbooks associated with the **Create New Device** trigger and automatic assignment of ZTP Profiles for better performance. 
+  - Aggregate changelog into monthly changes instead of daily changes. 
+  - Add support for Custom Script Types. 
+  - Modified Device field `deviceName` to be writeable by playbooks for Custom Scripts to change. 
+  - Update Docs to show Custom Script information. 
+  - Alow system export rename of playbook files that had a `-` instead of `>`. 
+  - Update playbooks associated with the **Create New Device** trigger and automatic assignment of ZTP Profiles for better performance.
 
 - 20231228 (1.0.2)
- - Add jinja vars support to ztp profile assignments and update docs to reflect this change.
+  - Add jinja vars support to ztp profile assignments and update docs to reflect this change.
 
 - 20230822
   - Fixed playbooks that reference the connector fortinet-fortimanager-json-rpc. It was incorrectly referencing fortinet_fortimanager_json_rpc.
