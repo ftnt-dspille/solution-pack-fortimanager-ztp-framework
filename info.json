@@ -1,6 +1,6 @@
 {
     "name": "fortiManagerZTPFlow",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "fsrMinCompatibility": "7.2.0",
     "type": "solutionpack",
     "local": true,
@@ -19,9 +19,9 @@
     "help": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-framework/blob/release/1.0.2/README.md",
     "category": [
         "Compliance and Reporting",
+        "Centralized Security Management",
         "DevOps and Digital Operations",
-        "Utilities",
-        "Centralized Security Management"
+        "Utilities"
     ],
     "supportInfo": null,
     "iconLarge": "fsr-icon-large.png",
@@ -29,10 +29,10 @@
         "enabled": false
     },
     "recordTags": [
-        "ZTP",
-        "FortiManager"
+        "FortiManager",
+        "ZTP"
     ],
-    "date": "2023-12-28T19:06:48+00:00",
+    "date": "2024-04-15T21:07:50+00:00",
     "contents": {
         "picklistNames": [
             {
@@ -88,8 +88,8 @@
                 "name": "Devices",
                 "apiName": "devices",
                 "views": [
-                    "list",
                     "detail",
+                    "list",
                     "form"
                 ]
             },
@@ -97,8 +97,8 @@
                 "name": "Managers",
                 "apiName": "managers",
                 "views": [
-                    "list",
                     "detail",
+                    "list",
                     "form"
                 ]
             },
@@ -106,8 +106,8 @@
                 "name": "Metafield Templates",
                 "apiName": "metafield_templates",
                 "views": [
-                    "list",
                     "detail",
+                    "list",
                     "form"
                 ]
             },
@@ -115,8 +115,8 @@
                 "name": "Scripts",
                 "apiName": "scripts",
                 "views": [
-                    "list",
                     "detail",
+                    "list",
                     "form"
                 ]
             },
@@ -124,8 +124,8 @@
                 "name": "ZTP Profiles",
                 "apiName": "z_t_p_profiles",
                 "views": [
-                    "list",
                     "detail",
+                    "list",
                     "form"
                 ]
             }
@@ -137,10 +137,10 @@
         },
         "roles": [
             {
-                "name": "FortiManager-Playbook-Appliance"
+                "name": "FortiManager-Admin"
             },
             {
-                "name": "FortiManager-Admin"
+                "name": "FortiManager-Playbook-Appliance"
             }
         ],
         "playbooks": [
@@ -179,19 +179,25 @@
                 "name": "FortiManager Device Config and Policy Manager"
             },
             {
-                "name": "FortiManager Device Metadata and Markdown Report"
-            },
-            {
                 "name": "FortiManager Device Metadata Assignments and Data"
             },
             {
                 "name": "FortiManager Device Metadata Manager"
             },
             {
+                "name": "FortiManager Device Metadata and Markdown Report"
+            },
+            {
                 "name": "FortiManager Device Template Assignments"
             },
             {
                 "name": "FortiManager Product Details"
+            },
+            {
+                "name": "FortiManager ZTP Profile and Phase Summary"
+            },
+            {
+                "name": "FortiManager ZTP Profile and Phase for Devices"
             },
             {
                 "name": "FortiManager ZTPF Docs - Main"
@@ -201,12 +207,6 @@
             },
             {
                 "name": "FortiManager ZTPF Docs - ZTP Profiles"
-            },
-            {
-                "name": "FortiManager ZTP Profile and Phase for Devices"
-            },
-            {
-                "name": "FortiManager ZTP Profile and Phase Summary"
             }
         ],
         "connectors": [
@@ -217,7 +217,7 @@
         ],
         "recordSets": [
             {
-                "name": "Announcements",
+                "name": null,
                 "apiName": "announcements",
                 "count": 1
             }
