@@ -217,7 +217,7 @@
         ],
         "recordSets": [
             {
-                "name": null,
+                "name": "Announcements",
                 "apiName": "announcements",
                 "count": 1
             }
