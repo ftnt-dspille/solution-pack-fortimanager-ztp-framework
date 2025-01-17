@@ -2,7 +2,7 @@
 |--------------------------------------------|
 
 # Change Log
- - 20240913-20241220 (1.0.5)
+ - 20240913-20250117 (1.0.5)
    - Update device synch to include hostname. 
    - Update special fields in the ZTP steps for authorization to include ADOM. 
    - Update `> monitor task complete` to continue if it errors out but return an `error:True` so that a stuck task can show `Failed`. 
@@ -26,6 +26,7 @@
    - Correct device synch to assume "root" is the management vdom if the device does not have a `mgt_vdom` set from FMG. Often seen with model method processes. 
    - Update record views for devices, metafield templates, and script templates. 
    - Update `> fmg script - exec on devices` to support adom in the URL to fix workspace mode problems. 
+   - Remove the `Tags` field from record views as FortiSOAR includes this as a default header of the record. 
 
 - 20240701 (1.0.4)
   - Update json-rpc Connector to 1.0.4. 
