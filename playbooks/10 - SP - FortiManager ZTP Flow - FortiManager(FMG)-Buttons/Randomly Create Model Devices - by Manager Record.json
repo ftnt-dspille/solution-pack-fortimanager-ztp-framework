@@ -809,7 +809,7 @@
     "deletedAt": null,
     "recordTags": [
         "connector_config",
-        "erxclude_patterns",
+        "exclude_patterns",
         "include_patterns"
     ]
 }

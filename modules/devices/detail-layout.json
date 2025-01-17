@@ -20,12 +20,14 @@
                                                         {
                                                             "name": "managers",
                                                             "highlightMode": true,
-                                                            "readOnly": true
+                                                            "readOnly": true,
+                                                            "linky": true
                                                         },
                                                         {
-                                                            "name": "deviceIP",
+                                                            "name": "deviceName",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": true,
+                                                            "linky": true
                                                         }
                                                     ],
                                                     "style": "col-lg-4"
@@ -33,19 +35,22 @@
                                                 {
                                                     "fields": [
                                                         {
-                                                            "name": "deviceName",
+                                                            "name": "deviceIP",
                                                             "highlightMode": true,
-                                                            "readOnly": true
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "platform",
                                                             "highlightMode": true,
-                                                            "readOnly": true
+                                                            "readOnly": true,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "sn",
                                                             "highlightMode": true,
-                                                            "readOnly": true
+                                                            "readOnly": true,
+                                                            "linky": true
                                                         }
                                                     ],
                                                     "style": "col-lg-4"
@@ -55,12 +60,14 @@
                                                         {
                                                             "name": "aDOM",
                                                             "highlightMode": true,
-                                                            "readOnly": true
+                                                            "readOnly": true,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "deviceGroups",
                                                             "highlightMode": true,
-                                                            "readOnly": true
+                                                            "readOnly": true,
+                                                            "linky": true
                                                         }
                                                     ],
                                                     "style": "col-lg-4"
@@ -503,7 +510,7 @@
                                                 "visible": true
                                             },
                                             "icon": "icon icon-expand",
-                                            "show": true,
+                                            "show": false,
                                             "visible": true
                                         }
                                     ],

@@ -20,22 +20,20 @@
                                                         {
                                                             "name": "name",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "orderPriority",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "description",
                                                             "highlightMode": true,
-                                                            "readOnly": false
-                                                        },
-                                                        {
-                                                            "name": "recordTags",
-                                                            "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         }
                                                     ],
                                                     "style": "col-lg-6"
@@ -45,22 +43,26 @@
                                                         {
                                                             "name": "createUser",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "createDate",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "modifyUser",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "modifyDate",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         }
                                                     ],
                                                     "style": "col-lg-6"
@@ -214,7 +216,7 @@
                                             "title": "Metafield Sources",
                                             "active": 0,
                                             "icon": "icon icon-json",
-                                            "show": true,
+                                            "show": false,
                                             "visible": true,
                                             "widget": {
                                                 "type": "rows",

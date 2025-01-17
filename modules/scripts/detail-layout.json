@@ -20,27 +20,26 @@
                                                         {
                                                             "name": "scriptType",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "scriptName",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "orderPriority",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "description",
                                                             "highlightMode": true,
-                                                            "readOnly": false
-                                                        },
-                                                        {
-                                                            "name": "recordTags",
-                                                            "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         }
                                                     ],
                                                     "style": "col-lg-6"
@@ -50,22 +49,26 @@
                                                         {
                                                             "name": "createUser",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "createDate",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "modifyUser",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         },
                                                         {
                                                             "name": "modifyDate",
                                                             "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         }
                                                     ],
                                                     "style": "col-lg-6"
@@ -95,7 +98,7 @@
                                             "title": "Script",
                                             "active": 0,
                                             "icon": "fa fa-none",
-                                            "show": false,
+                                            "show": true,
                                             "visible": true,
                                             "widget": {
                                                 "type": "rows",
@@ -119,10 +122,12 @@
                                                                                 "sectionText": "<p style=\"text-align: center;\"><strong>Script<\/strong><\/p>\n<ul>\n<li><span style=\"letter-spacing: 0.76px;\">The template, as a jinja script, for building device scripts based on the script type.&nbsp;<\/span><\/li>\n<li>Metadata sources provide additional data from external sources to be used in building device scripts from jinja template.<\/li>\n<\/ul>"
                                                                             }
                                                                         }
-                                                                    ]
+                                                                    ],
+                                                                    "style": "col-lg-12"
                                                                 }
                                                             ],
-                                                            "wid": "062a9206-d044-4d5b-8c27-92bb09629de5"
+                                                            "wid": "062a9206-d044-4d5b-8c27-92bb09629de5",
+                                                            "_collapsed": false
                                                         },
                                                         {
                                                             "columns": [
@@ -150,20 +155,23 @@
                                                                                 ]
                                                                             }
                                                                         }
-                                                                    ]
+                                                                    ],
+                                                                    "style": "col-lg-12"
                                                                 }
                                                             ],
-                                                            "wid": "3e6e4141-8494-4be6-865e-33841290b46b"
+                                                            "wid": "3e6e4141-8494-4be6-865e-33841290b46b",
+                                                            "_collapsed": false
                                                         }
                                                     ]
-                                                }
+                                                },
+                                                "visible": true
                                             }
                                         },
                                         {
                                             "title": "Metadata Sources",
                                             "active": 0,
                                             "icon": "icon icon-json",
-                                            "show": true,
+                                            "show": false,
                                             "visible": true,
                                             "widget": {
                                                 "type": "rows",
