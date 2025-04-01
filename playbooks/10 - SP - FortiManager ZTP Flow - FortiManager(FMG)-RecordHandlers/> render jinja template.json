@@ -60,7 +60,7 @@
             "name": "extract_results",
             "description": null,
             "arguments": {
-                "output": "{{vars.steps.Convert_Jinja_to_String.data.result}}"
+                "output": "{%- set output = vars.steps.Convert_Jinja_to_String.data.result -%}\n\n{%- if output is not defined or output is none -%}\n  {{ \"Error: No output found\" }}\n{%- elif (output | type_debug == \"dict\") or (output | type_debug == \"list\") -%}\n  {{ output }}\n{%- elif output | type_debug == \"str\" -%}\n  {%- if output.strip().startswith('\"{\"') or output.strip().startswith('\"{') -%}\n    {%- set cleaned_str = output.strip('\"').replace('\\\\n', ' ').replace('\\\\\"', '\"') -%}\n    {%- if cleaned_str.strip().startswith('{') and cleaned_str.strip().endswith('}') -%}\n      {{ cleaned_str | toDict }}\n    {%- else -%}\n      {{ output }}\n    {%- endif -%}\n  {%- else -%}\n    {{ output }}\n  {%- endif -%}\n{%- else -%}\n  {{ \"Error: Unexpected data type: \" + (output | type_debug) }}\n{%- endif -%}"
             },
             "status": null,
             "top": "380",
@@ -120,7 +120,25 @@
             "uuid": "0174bbbc-91bc-42cc-a3e9-6e0daef03998"
         }
     ],
-    "groups": [],
+    "groups": [
+        {
+            "@type": "WorkflowGroup",
+            "name": "Change Log",
+            "description": "3\/31\/25 Update extract results to better handle parsing scenarios where the conversion results may be a string and not a dictionary - DS",
+            "type": "note",
+            "isCollapsed": false,
+            "hasTriggerStep": false,
+            "hideInLogs": true,
+            "metadata": [],
+            "reusable": false,
+            "top": "240",
+            "left": "620",
+            "height": "146",
+            "width": "498",
+            "uuid": "53c5ec66-ba7b-4bb5-87c2-60b765059eb1",
+            "recordTags": []
+        }
+    ],
     "priority": "\/api\/3\/picklists\/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
     "uuid": "8aff2bb3-7d1c-45f1-aae9-ea816aea874d",
     "owners": [],
