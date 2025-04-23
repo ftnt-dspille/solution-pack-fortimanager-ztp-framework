@@ -9,7 +9,7 @@ Install the Solution Pack. This is an example screenshot and what you see in the
 
 # Configuration
  
- * Modify the System `Settings > Appliances > Playbook` user to have the `FortiManager-Playbook-Appliance` Role.
+ * Modify the `System Settings>Access Keys>Appliances>Playbook`, or if < 7.5.0 then `System Settings>Appliances>Playbook`, user to have the `FortiManager-Playbook-Appliance` Role.
  * Modify the System `Settings > Users`, that will be using this solution, to have the `FortiManager-Admin` Role.
  * Navigate to `Automation > Connectors` and look for `Code Snippet`. Make sure this is installed and has a configuration marked as `Mark as default configuration`.
 
