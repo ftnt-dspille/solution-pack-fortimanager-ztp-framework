@@ -36,7 +36,7 @@
             "name": "find_input",
             "description": null,
             "arguments": {
-                "output": "{% set final_dict = {}%}{% set field,param = vars.input.params.payload.split(':')%}{% set relevant_dictionaries = vars.file_data | json_query('[?{} ==`{}`]'.format(field,param)) %}\n{% for item in relevant_dictionaries %}\n{% do final_dict.update(item) %}\n{% endfor %}{{final_dict }}"
+                "output": "{% set final_dict = {} -%}\n{% set field,param = vars.input.params.payload.split(':') -%}\n{% set relevant_dictionaries = vars.file_data | json_query('[?{} ==`{}`]'.format(field,param)) -%}\n{% for item in relevant_dictionaries -%}\n\t{% do final_dict.update(item) -%}\n{% endfor -%}\n{{final_dict }}"
             },
             "status": null,
             "top": "400",
