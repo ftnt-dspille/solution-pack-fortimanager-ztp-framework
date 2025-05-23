@@ -1,5 +1,9 @@
 # What's New
 
+Release of 1.0.8
+ - Enhance jinjs for monitoring of tasks and policy script execution
+ - Fix a processing issue with running linked scripts on a device 
+
 Release of 1.0.4:
  - Fix problems with running in FSR 7.5.x. 
  - Add support for FMG Workspace mode. 
