@@ -380,5 +380,13 @@
             "originalTemplateTitle": "ZTP Profiles"
         }
     },
-    "uuid": "modules-z_t_p_profiles-list"
+    "module": "z_t_p_profiles",
+    "filters": [],
+    "isDefault": true,
+    "visible": true,
+    "viewOptions": "list",
+    "name": "Base Template",
+    "system": true,
+    "uuid": "modules-z_t_p_profiles-list",
+    "newUuid": "e28a42dd-d19c-41d5-8a0e-e13e2d950423"
 }

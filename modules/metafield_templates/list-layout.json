@@ -208,5 +208,13 @@
             "originalTemplateTitle": "Metafield Templates"
         }
     },
-    "uuid": "modules-metafield_templates-list"
+    "module": "metafield_templates",
+    "filters": [],
+    "isDefault": true,
+    "visible": true,
+    "viewOptions": "list",
+    "name": "Base Template",
+    "system": true,
+    "uuid": "modules-metafield_templates-list",
+    "newUuid": "2dad0c2d-a882-4bd4-a3f8-a0a3914fe9f3"
 }
