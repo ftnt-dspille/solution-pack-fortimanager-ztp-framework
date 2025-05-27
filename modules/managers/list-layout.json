@@ -265,5 +265,13 @@
             "originalTemplateTitle": "Managers"
         }
     },
-    "uuid": "modules-managers-list"
+    "module": "managers",
+    "filters": [],
+    "isDefault": true,
+    "visible": true,
+    "viewOptions": "list",
+    "name": "Base Template",
+    "system": true,
+    "uuid": "modules-managers-list",
+    "newUuid": "6619093b-62df-48a5-a963-a7fb23576131"
 }
