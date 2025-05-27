@@ -96,6 +96,7 @@
             "description": null,
             "arguments": {
                 "output": "{{vars.steps.Convert_metadatas_to_yaml_string.output}}",
+                "device_iri": "{{vars.steps.Lookup_devices[0]['@id']}}",
                 "devices_title": "{{vars.steps.Lookup_devices|json_query('[].[\"connectorConfig\",\"deviceName\"]')}}",
                 "device_metadatas": "{{vars.device_metadatas}}",
                 "device_id_iri_dict": "{{vars.device_id_iri_dict}}"
