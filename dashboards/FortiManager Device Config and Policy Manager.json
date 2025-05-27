@@ -1,6 +1,7 @@
 {
     "@context": "\/api\/3\/contexts\/Dashboard",
     "@type": "Dashboard",
+    "isDefault": false,
     "uuid": "7abf801b-aeb7-4048-9bf1-2ced15212f5c",
     "displayName": "FortiManager Device Config and Policy Manager",
     "type": "rows",

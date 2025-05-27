@@ -1,6 +1,7 @@
 {
     "@context": "\/api\/3\/contexts\/Dashboard",
     "@type": "Dashboard",
+    "isDefault": false,
     "uuid": "d9772022-ba8b-4351-a707-7b1df8d4eeaf",
     "displayName": "FortiManager Product Details",
     "type": "rows",
