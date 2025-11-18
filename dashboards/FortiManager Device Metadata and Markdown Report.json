@@ -1,6 +1,7 @@
 {
     "@context": "\/api\/3\/contexts\/Dashboard",
     "@type": "Dashboard",
+    "isDefault": false,
     "uuid": "d8d0ce9e-39b2-4617-a117-8de7dad9f9ec",
     "displayName": "FortiManager Device Metadata and Markdown Report",
     "type": "rows",
