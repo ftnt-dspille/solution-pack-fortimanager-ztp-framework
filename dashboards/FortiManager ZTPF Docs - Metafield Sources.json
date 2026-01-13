@@ -1,6 +1,7 @@
 {
     "@context": "\/api\/3\/contexts\/Dashboard",
     "@type": "Dashboard",
+    "isDefault": false,
     "uuid": "9545ae4e-0552-43e4-a399-1082dabe8a98",
     "displayName": "FortiManager ZTPF Docs - Metafield Sources",
     "type": "rows",

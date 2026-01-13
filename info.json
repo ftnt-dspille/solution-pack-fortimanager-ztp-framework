@@ -1,6 +1,6 @@
 {
     "name": "fortiManagerZTPFlow",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "fsrMinCompatibility": "7.2.0",
     "type": "solutionpack",
     "local": true,
@@ -17,11 +17,11 @@
     "publisher": "Fortinet CSE",
     "contributor": "James Hilving",
     "description": "A solution framework to manage one or more FortiManagers and attached Fortinet Devices. Build a ZTP Flow that will perform onboarding, lifecycle, and/or offboarding objectives for devices. Create a single pane of glass dashboard for multiple FortiManagers and attached devices. Create reports for devices using jinja to simplify data collection. Interact with external users and/or systems to collect device metadata required for various tasks.",
-    "help": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-framework/blob/release/1.0.7/README.md",
+    "help": "https://github.com/fortinet-fortisoar/solution-pack-fortimanager-ztp-framework/blob/release/1.0.8/README.md",
     "category": [
+        "Centralized Security Management",
         "Compliance and Reporting",
         "DevOps and Digital Operations",
-        "Centralized Security Management",
         "Utilities"
     ],
     "supportInfo": null,
@@ -33,7 +33,7 @@
         "FortiManager",
         "ZTP"
     ],
-    "date": "",
+    "date": "2025-05-27T15:36:13+00:00",
     "contents": {
         "picklistNames": [
             {
@@ -90,8 +90,8 @@
                 "apiName": "devices",
                 "views": [
                     "detail",
-                    "list",
-                    "form"
+                    "form",
+                    "list"
                 ]
             },
             "managers": {
@@ -99,8 +99,8 @@
                 "apiName": "managers",
                 "views": [
                     "detail",
-                    "list",
-                    "form"
+                    "form",
+                    "list"
                 ]
             },
             "metafield_templates": {
@@ -108,8 +108,8 @@
                 "apiName": "metafield_templates",
                 "views": [
                     "detail",
-                    "list",
-                    "form"
+                    "form",
+                    "list"
                 ]
             },
             "scripts": {
@@ -117,8 +117,8 @@
                 "apiName": "scripts",
                 "views": [
                     "detail",
-                    "list",
-                    "form"
+                    "form",
+                    "list"
                 ]
             },
             "z_t_p_profiles": {
@@ -126,8 +126,8 @@
                 "apiName": "z_t_p_profiles",
                 "views": [
                     "detail",
-                    "list",
-                    "form"
+                    "form",
+                    "list"
                 ]
             }
         },
@@ -212,8 +212,8 @@
         ],
         "connectors": [
             {
-              "name": "Code Snippet",
-              "apiName": "code-snippet"
+                "name": "Code Snippet",
+                "apiName": "code-snippet"
             },
             {
                 "name": "Fortinet FortiManager JSON RPC",
@@ -222,7 +222,7 @@
         ],
         "recordSets": [
             {
-                "name": "Announcements",
+                "name": null,
                 "apiName": "announcements",
                 "count": 1
             }

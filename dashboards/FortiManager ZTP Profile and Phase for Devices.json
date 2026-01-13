@@ -1,6 +1,7 @@
 {
     "@context": "\/api\/3\/contexts\/Dashboard",
     "@type": "Dashboard",
+    "isDefault": false,
     "uuid": "663dc13b-9a25-4cc9-af85-ed46609e0d4f",
     "displayName": "FortiManager ZTP Profile and Phase for Devices",
     "type": "rows",

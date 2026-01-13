@@ -1,5 +1,19 @@
 # What's New
 
+Release of 1.0.8
+- Add 7.6.2 compatibility with playbook origin and editable flag support
+- Add new playbook to unlock all playbooks in the ZTP solution pack
+- Enhance Jinja templates for monitoring task execution time and policy script execution
+- Add logic to handle Jinja template rendering errors with device comments
+- Improve ZTP profile lookup performance using 7.6.2 loop breaking feature
+- Enhance missing metadata prompts with direct device record linking
+- Fix processing issue with running linked scripts on devices
+- Add task parameters for device authorization
+- Improve device name changing to use global device level
+- Add 7.6.2 dashboard defaults and MMD changes
+- Enhance format return for easier device IRI linking in dialogs
+- Enhance comment creation for script results
+
 Release of 1.0.4:
  - Fix problems with running in FSR 7.5.x. 
  - Add support for FMG Workspace mode. 
