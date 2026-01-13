@@ -1,6 +1,7 @@
 {
     "@context": "\/api\/3\/contexts\/Dashboard",
     "@type": "Dashboard",
+    "isDefault": false,
     "uuid": "ad1019a3-30d8-413c-9c5e-b0b2d7d9a560",
     "displayName": "FortiManager ZTPF Docs - Main",
     "type": "rows",

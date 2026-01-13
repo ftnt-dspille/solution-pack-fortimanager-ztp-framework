@@ -285,5 +285,13 @@
             "originalTemplateTitle": "Scripts"
         }
     },
-    "uuid": "modules-scripts-list"
+    "module": "scripts",
+    "filters": [],
+    "isDefault": true,
+    "visible": true,
+    "viewOptions": "list",
+    "name": "Base Template",
+    "system": true,
+    "uuid": "modules-scripts-list",
+    "newUuid": "cfdd370c-ae6a-4647-ab18-412189679372"
 }
