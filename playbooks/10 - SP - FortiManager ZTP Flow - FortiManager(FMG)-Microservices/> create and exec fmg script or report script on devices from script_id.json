@@ -1,4 +1,5 @@
 {
+    "@context": "\/api\/3\/contexts\/Workflow",
     "@type": "Workflow",
     "triggerLimit": null,
     "name": "> create and exec fmg script or report script on devices from script_id",
@@ -103,6 +104,7 @@
             "arguments": {
                 "arguments": {
                     "adom": "{{vars.input.params.adom}}",
+                    "fmg_version": "{{vars.steps.find_devices[0].managers.firmware}}",
                     "script_name": "{{vars.script_exec_name}}",
                     "script_type": "{{vars.script_type}}",
                     "script_contents": "'{{vars.template_rendered.output|to_json}}'",
@@ -156,6 +158,7 @@
                 "when": "{{vars.delete_script == True}}",
                 "arguments": {
                     "adom": "{{vars.input.params.adom}}",
+                    "fmg_version": "{{vars.steps.find_devices[0].managers.firmware}}",
                     "script_name": "{{vars.script_exec_name}}",
                     "connector_config": "{{vars.input.params['connector_config']}}"
                 },
@@ -390,11 +393,12 @@
                         "deviceName",
                         "vDOM",
                         "policyPackage",
+                        "deviceMetadata",
                         "description",
                         "zTPProfiles",
                         "reportMarkdown",
                         "id",
-                        "deviceMetadata"
+                        "managers"
                     ]
                 },
                 "module": "devices?$limit=5000&$relationships=true&$fsr_max_relation_count=100",
@@ -1015,6 +1019,23 @@
         }
     ],
     "groups": [
+        {
+            "@type": "WorkflowGroup",
+            "name": "Change Log",
+            "description": "1\/12\/26 - Add search for manager field, and pass firmware to script steps",
+            "type": "note",
+            "isCollapsed": false,
+            "hasTriggerStep": false,
+            "hideInLogs": true,
+            "metadata": [],
+            "reusable": false,
+            "top": "80",
+            "left": "2580",
+            "height": "158",
+            "width": "498",
+            "uuid": "fb4e340d-a862-4900-9dcf-e982065eb381",
+            "recordTags": []
+        },
         {
             "@type": "WorkflowGroup",
             "name": "Execute Script Based on Type",

@@ -1,4 +1,5 @@
 {
+    "@context": "\/api\/3\/contexts\/Workflow",
     "@type": "Workflow",
     "triggerLimit": null,
     "name": "> create fmg script",
@@ -14,7 +15,8 @@
         "adom",
         "script_name",
         "script_type",
-        "script_contents"
+        "script_contents",
+        "fmg_version"
     ],
     "synchronous": false,
     "collection": "\/api\/3\/workflow_collections\/acff9572-b869-4ceb-bbc1-1c3700ec9a4e",
@@ -29,10 +31,10 @@
                 "name": "Fortinet FortiManager JSON-RPC",
                 "config": "{{vars.input.params['connector_config']}}",
                 "params": {
-                    "url": "\/dvmdb\/adom\/{{vars.input.params.adom}}\/script\/",
+                    "url": "{{vars.url}}",
                     "data": "{{vars.script_payload}}"
                 },
-                "version": "1.0.0",
+                "version": "1.2.2",
                 "connector": "fortinet-fortimanager-json-rpc",
                 "operation": "json_rpc_add",
                 "operationTitle": "JSON RPC Add",
@@ -65,6 +67,7 @@
             "name": "setup_payload",
             "description": null,
             "arguments": {
+                "url": "{#- Match: v7.6.5 exactly OR v8.<minor>.<patch> -#}\n{%- set version_re = 'v(?:7\\.6\\.5|8\\.\\d+\\.\\d+)' -%}\n\n{#- if matches new veresion -#}\n{%- if vars.input.params['fmg_version'] | regex_search(version_re) -%}\n\/pm\/config\/adom\/{{vars.input.params.adom}}\/obj\/fmg\/script\n{%- else -%}\n\/dvmdb\/adom\/{{vars.input.params.adom}}\/script\/\n{%- endif -%}",
                 "script_payload": "{%- set payload = {} -%}\n{%- set _do = payload.update({\n    \"data\": {\n      \"name\":vars.input.params['script_name'],\n      \"target\":vars.script_type_ref.target,\n      \"type\":vars.script_type_ref.type,\n      \"content\": vars.input.params['script_contents'].strip('\\\"'),\n      \"desc\": \"Created by FortiSOAR and will be deleted when executed.\"\n    }\n  }) \n%}\n{{payload}}"
             },
             "status": null,
@@ -149,7 +152,25 @@
             "uuid": "1d1c5689-f359-4740-b486-c0a51408507a"
         }
     ],
-    "groups": [],
+    "groups": [
+        {
+            "@type": "WorkflowGroup",
+            "name": "Change Log",
+            "description": "1\/12\/26 - Add support for FMG 7.6.5 and 8.0.0",
+            "type": "note",
+            "isCollapsed": false,
+            "hasTriggerStep": false,
+            "hideInLogs": true,
+            "metadata": [],
+            "reusable": false,
+            "top": "60",
+            "left": "980",
+            "height": "0",
+            "width": "300",
+            "uuid": "db5d3c56-e350-4e7a-8fa5-48c4ece39448",
+            "recordTags": []
+        }
+    ],
     "priority": "\/api\/3\/picklists\/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
     "playbookOrigin": "\/api\/3\/picklists\/b6d710a9-a8ec-41ec-8817-fe9fa062fcdd",
     "isEditable": true,
