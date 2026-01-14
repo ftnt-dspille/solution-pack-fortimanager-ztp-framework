@@ -20,22 +20,8 @@
                                                         {
                                                             "name": "managerName",
                                                             "highlightMode": true,
-                                                            "readOnly": false
-                                                        },
-                                                        {
-                                                            "name": "managerIP",
-                                                            "highlightMode": true,
-                                                            "readOnly": false
-                                                        },
-                                                        {
-                                                            "name": "adminRpcUser",
-                                                            "highlightMode": true,
-                                                            "readOnly": false
-                                                        },
-                                                        {
-                                                            "name": "adminRpcPassword",
-                                                            "highlightMode": true,
-                                                            "readOnly": false
+                                                            "readOnly": false,
+                                                            "linky": true
                                                         }
                                                     ]
                                                 }
@@ -44,10 +30,12 @@
                                     ]
                                 }
                             }
-                        ]
+                        ],
+                        "style": "col-lg-12"
                     }
                 ],
-                "wid": "f47747f7-6cfd-4051-817f-ff46b2e55dce"
+                "wid": "f47747f7-6cfd-4051-817f-ff46b2e55dce",
+                "_collapsed": false
             }
         ],
         "wid": "423df4a0-8832-432d-aa8c-38b81f17a51a",
