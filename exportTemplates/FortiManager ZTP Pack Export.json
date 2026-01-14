@@ -2,7 +2,7 @@
     "@context": "\/api\/3\/contexts\/ExportTemplate",
     "@type": "ExportTemplate",
     "name": "FortiManager ZTP Pack Export",
-    "lastExportDate": 1768271984.309106,
+    "lastExportDate": 1768272219.890351,
     "options": {
         "roles": [
             {
@@ -1628,7 +1628,7 @@
                     "includeGlobalVariables": true
                 },
                 {
-                    "label": "10 - SP - FortiManager ZTP Flow -FortiManager(FMG)-Microservices",
+                    "label": "10 - SP - FortiManager ZTP Flow - FortiManager(FMG)-Microservices",
                     "value": "acff9572-b869-4ceb-bbc1-1c3700ec9a4e",
                     "include": true,
                     "includeVersions": true,
@@ -1696,7 +1696,15 @@
             "663dc13b-9a25-4cc9-af85-ed46609e0d4f",
             "88827bf8-2014-4881-8b28-8ece441bdddd"
         ],
-        "recordSets": [],
+        "recordSets": [
+            {
+                "type": "announcements",
+                "label": "Announcements",
+                "query": null,
+                "include": true,
+                "includeCorrelations": false
+            }
+        ],
         "appSettings": [],
         "ruleChannels": [],
         "picklistNames": [
