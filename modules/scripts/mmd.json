@@ -33,12 +33,10 @@
     "writable": true,
     "attributes": [
         {
-            "@id": "\/api\/3\/attribute_metadatas\/a98df2f5-71ba-44a2-93d2-57882ebe9643",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "orderPriority",
             "length": null,
-            "orderIndex": 1,
             "formType": "integer",
             "dataSource": null,
             "searchable": true,
@@ -72,19 +70,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "a98df2f5-71ba-44a2-93d2-57882ebe9643",
             "displayName": "{{ orderPriority }}",
             "descriptions": {
                 "singular": "Order Priority"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/763594d6-adef-4c73-86fd-f432490feb02",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "scriptName",
             "length": null,
-            "orderIndex": 2,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -119,19 +114,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "763594d6-adef-4c73-86fd-f432490feb02",
             "displayName": "{{ scriptName }}",
             "descriptions": {
                 "singular": "Name"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/721304b3-a6f8-4724-83e5-12a00752ab55",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "description",
             "length": null,
-            "orderIndex": 3,
             "formType": "richtext",
             "dataSource": null,
             "searchable": true,
@@ -166,19 +158,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "721304b3-a6f8-4724-83e5-12a00752ab55",
             "displayName": "{{ description }}",
             "descriptions": {
                 "singular": "Description"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/4d27eaae-d270-469a-82af-251638424541",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "scriptType",
             "length": null,
-            "orderIndex": 4,
             "formType": "picklist",
             "dataSource": {
                 "model": "picklists",
@@ -249,19 +238,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "4d27eaae-d270-469a-82af-251638424541",
             "displayName": "{{ scriptType }}",
             "descriptions": {
                 "singular": "Type"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/e851b109-c08f-4f13-b3c4-b400f8de15ca",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "script",
             "length": null,
-            "orderIndex": 5,
             "formType": "textarea",
             "dataSource": null,
             "searchable": true,
@@ -296,19 +282,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "e851b109-c08f-4f13-b3c4-b400f8de15ca",
             "displayName": "{{ script }}",
             "descriptions": {
                 "singular": "Script"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/593fe49f-0973-4501-98c5-9e1f1fc6a294",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "scriptMetadataSources",
             "length": null,
-            "orderIndex": 6,
             "formType": "textarea",
             "dataSource": null,
             "searchable": true,
@@ -343,19 +326,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "593fe49f-0973-4501-98c5-9e1f1fc6a294",
             "displayName": "{{ scriptMetadataSources }}",
             "descriptions": {
                 "singular": "Metadata Sources"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/339aee58-7d07-4049-af33-173cb32a6da6",
             "@type": "AttributeMetadata",
             "type": "metafield_templates",
             "name": "metafieldTemplates",
             "length": null,
-            "orderIndex": 7,
             "formType": "manyToMany",
             "dataSource": {
                 "model": "metafield_templates"
@@ -386,19 +366,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "339aee58-7d07-4049-af33-173cb32a6da6",
             "displayName": "{{ metafieldTemplates }}",
             "descriptions": {
                 "singular": "Metafield Templates"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/e9575d1c-b726-4251-8154-437e0863da61",
             "@type": "AttributeMetadata",
             "type": "devices",
             "name": "devices",
             "length": null,
-            "orderIndex": 8,
             "formType": "manyToMany",
             "dataSource": {
                 "model": "devices"
@@ -425,19 +402,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "e9575d1c-b726-4251-8154-437e0863da61",
             "displayName": "{{ devices }}",
             "descriptions": {
                 "singular": "Devices"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/76664ada-e687-4569-a29b-65301c571da3",
             "@type": "AttributeMetadata",
             "type": "managers",
             "name": "managers",
             "length": null,
-            "orderIndex": 9,
             "formType": "manyToMany",
             "dataSource": {
                 "model": "managers"
@@ -464,19 +438,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "76664ada-e687-4569-a29b-65301c571da3",
             "displayName": "{{Managers}}",
             "descriptions": {
                 "singular": "Managers"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/15eeba4d-065e-491e-a572-326229b3b9b0",
             "@type": "AttributeMetadata",
             "type": "z_t_p_profiles",
             "name": "zTPProfiles",
             "length": null,
-            "orderIndex": 10,
             "formType": "manyToMany",
             "dataSource": {
                 "model": "z_t_p_profiles"
@@ -503,7 +474,6 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "15eeba4d-065e-491e-a572-326229b3b9b0",
             "displayName": "{{ zTPProfiles }}",
             "descriptions": {
                 "singular": "ZTP Profiles"
