@@ -24,12 +24,10 @@
     "writable": true,
     "attributes": [
         {
-            "@id": "\/api\/3\/attribute_metadatas\/8c497fab-6df8-4bb5-993f-11b876114f4d",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "managerMetadata",
             "length": null,
-            "orderIndex": 1,
             "formType": "textarea",
             "dataSource": null,
             "searchable": true,
@@ -63,19 +61,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "8c497fab-6df8-4bb5-993f-11b876114f4d",
             "displayName": "{{ managerMetadata }}",
             "descriptions": {
                 "singular": "Manager Metadata"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/a06a3915-ceea-41d2-8286-6006b768e77a",
             "@type": "AttributeMetadata",
             "type": "scripts",
             "name": "scripts",
             "length": null,
-            "orderIndex": 2,
             "formType": "manyToMany",
             "dataSource": {
                 "model": "scripts"
@@ -106,19 +101,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "a06a3915-ceea-41d2-8286-6006b768e77a",
             "displayName": "{{ scripts }}",
             "descriptions": {
                 "singular": "Scripts"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/61925cec-892c-4b69-b474-6de485177896",
             "@type": "AttributeMetadata",
             "type": "picklists",
             "name": "adminStatus",
             "length": null,
-            "orderIndex": 3,
             "formType": "picklist",
             "dataSource": {
                 "model": "picklists",
@@ -181,19 +173,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "61925cec-892c-4b69-b474-6de485177896",
             "displayName": "{{ adminStatus }}",
             "descriptions": {
                 "singular": "Admin Status"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/bd463c3c-bebc-4b3a-9ce4-5943ff9155da",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "managerName",
             "length": null,
-            "orderIndex": 4,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -228,20 +217,17 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "bd463c3c-bebc-4b3a-9ce4-5943ff9155da",
             "displayName": "{{ managerName }}",
             "descriptions": {
                 "singular": "Manager Name"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/14b78745-def2-4039-9606-8087dd6a60fa",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "managerIP",
             "length": null,
-            "orderIndex": 5,
-            "formType": "ipv4",
+            "formType": "text",
             "dataSource": null,
             "searchable": true,
             "peerReplicable": true,
@@ -275,19 +261,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "14b78745-def2-4039-9606-8087dd6a60fa",
             "displayName": "{{ managerIP }}",
             "descriptions": {
-                "singular": "Manager IP"
+                "singular": "Manager IP\/Domain"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/984af181-70e4-4c1f-8bb5-ac6e4b04250c",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "firmware",
             "length": null,
-            "orderIndex": 6,
             "formType": "text",
             "dataSource": null,
             "searchable": true,
@@ -321,19 +304,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "984af181-70e4-4c1f-8bb5-ac6e4b04250c",
             "displayName": "{{ firmware }}",
             "descriptions": {
                 "singular": "Firmware"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/3d572761-64ec-45b4-94a2-289a1a505f6f",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "adminRpcUser",
             "length": null,
-            "orderIndex": 7,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -368,19 +348,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "3d572761-64ec-45b4-94a2-289a1a505f6f",
             "displayName": "{{ adminRpcUser }}",
             "descriptions": {
                 "singular": "Admin RPC User"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/4dba72c6-a101-4a56-b9e6-e20ab7e62840",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "adminRpcPassword",
             "length": null,
-            "orderIndex": 8,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -415,19 +392,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "4dba72c6-a101-4a56-b9e6-e20ab7e62840",
             "displayName": "{{ adminRpcPassword }}",
             "descriptions": {
                 "singular": "Admin RPC Password"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/83038f94-d961-4895-a157-ba80cbadf5b9",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "adminUser",
             "length": null,
-            "orderIndex": 9,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -462,19 +436,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "83038f94-d961-4895-a157-ba80cbadf5b9",
             "displayName": "{{ adminUser }}",
             "descriptions": {
                 "singular": "Admin User"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/6d2c2f46-a5c2-4e2e-a608-b837c0dca1a7",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "adminPassword",
             "length": null,
-            "orderIndex": 10,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -509,19 +480,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "6d2c2f46-a5c2-4e2e-a608-b837c0dca1a7",
             "displayName": "{{ adminPassword }}",
             "descriptions": {
                 "singular": "Admin Password"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/7a0facc3-1804-4c72-b99c-b1e1f56bc474",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "platform",
             "length": null,
-            "orderIndex": 11,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -556,19 +524,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "7a0facc3-1804-4c72-b99c-b1e1f56bc474",
             "displayName": "{{ platform }}",
             "descriptions": {
                 "singular": "Platform"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/6fa00884-fc99-4d08-9730-a8dbd5acbd33",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "timeZone",
             "length": null,
-            "orderIndex": 12,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -603,19 +568,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "6fa00884-fc99-4d08-9730-a8dbd5acbd33",
             "displayName": "{{ timeZone }}",
             "descriptions": {
                 "singular": "Time Zone"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/b80dff76-46bd-4d50-9fb7-f94b31ecb50d",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "sN",
             "length": null,
-            "orderIndex": 13,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -650,19 +612,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "b80dff76-46bd-4d50-9fb7-f94b31ecb50d",
             "displayName": "{{ sN }}",
             "descriptions": {
                 "singular": "SN"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/e8f09f04-4b4e-4ec3-bc43-6979a37c203c",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "licenseStatus",
             "length": null,
-            "orderIndex": 14,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -696,19 +655,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "e8f09f04-4b4e-4ec3-bc43-6979a37c203c",
             "displayName": "{{ licenseStatus }}",
             "descriptions": {
                 "singular": "License Status"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/d9cc06f2-cfe8-4093-96a4-e18a8545c41c",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "aDOMMode",
             "length": null,
-            "orderIndex": 15,
             "formType": "text",
             "dataSource": null,
             "searchable": false,
@@ -742,19 +698,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "d9cc06f2-cfe8-4093-96a4-e18a8545c41c",
             "displayName": "{{ aDOMMode }}",
             "descriptions": {
                 "singular": "ADOM Mode"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/eca6bfec-bd04-416d-81af-c25c26cf2218",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "maxDevices",
             "length": null,
-            "orderIndex": 16,
             "formType": "integer",
             "dataSource": null,
             "searchable": true,
@@ -788,19 +741,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "eca6bfec-bd04-416d-81af-c25c26cf2218",
             "displayName": "{{ maxDevices }}",
             "descriptions": {
                 "singular": "Max Devices"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/c21e0742-7760-4819-a0cc-4892100254c0",
             "@type": "AttributeMetadata",
             "type": "integer",
             "name": "maxADOMS",
             "length": null,
-            "orderIndex": 17,
             "formType": "integer",
             "dataSource": null,
             "searchable": true,
@@ -834,19 +784,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "c21e0742-7760-4819-a0cc-4892100254c0",
             "displayName": "{{ maxADOMS }}",
             "descriptions": {
                 "singular": "Max ADOMS"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/c6be38ff-e335-46d8-b359-04e5d87b31bf",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "sourceData",
             "length": null,
-            "orderIndex": 18,
             "formType": "textarea",
             "dataSource": null,
             "searchable": true,
@@ -880,19 +827,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "c6be38ff-e335-46d8-b359-04e5d87b31bf",
             "displayName": "{{ sourceData }}",
             "descriptions": {
                 "singular": "Source Data"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/562ecc61-2947-47b5-b150-0c2cca664f44",
             "@type": "AttributeMetadata",
             "type": "string",
             "name": "description",
             "length": null,
-            "orderIndex": 19,
             "formType": "richtext",
             "dataSource": null,
             "searchable": true,
@@ -927,19 +871,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "562ecc61-2947-47b5-b150-0c2cca664f44",
             "displayName": "{{ description }}",
             "descriptions": {
                 "singular": "Description"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/24188c10-6bfb-4672-bc19-11c3fb41ba58",
             "@type": "AttributeMetadata",
             "type": "comments",
             "name": "comments",
             "length": null,
-            "orderIndex": 20,
             "formType": "manyToMany",
             "dataSource": {
                 "model": "comments"
@@ -970,19 +911,16 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "24188c10-6bfb-4672-bc19-11c3fb41ba58",
             "displayName": "{{ comments }}",
             "descriptions": {
                 "singular": "Comments"
             }
         },
         {
-            "@id": "\/api\/3\/attribute_metadatas\/3e78227a-a0c7-4e8f-b8a4-b42b2150eee4",
             "@type": "AttributeMetadata",
             "type": "devices",
             "name": "devices",
             "length": null,
-            "orderIndex": 21,
             "formType": "oneToMany",
             "dataSource": {
                 "model": "devices"
@@ -1014,7 +952,6 @@
             "unique": false,
             "recommend": false,
             "skipSerialization": false,
-            "uuid": "3e78227a-a0c7-4e8f-b8a4-b42b2150eee4",
             "displayName": "{{ devices }}",
             "descriptions": {
                 "singular": "Devices"
