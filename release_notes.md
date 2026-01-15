@@ -1,5 +1,28 @@
 # What's New
 
+Release of 1.1.0
+
+- Remove dependency on sOARFramework (solution pack is now more standalone)
+- Improve Announcements by removing the dependency and using the ZTP Quick Links module for navigation to key pages
+- Update and modernize roles
+- Update compatibility for FortiManager 7.6.5 script changes
+- Improve compatibility for FortiSOAR 7.6.4 (`task_id` variable naming support)
+- Improve FortiManager record creation workflow:
+  - Better password handling logic
+  - “Add Manager Only” now prompts for name only
+  - Playbook prompts for manager IP/domain + password when needed
+- UI/UX improvements:
+  - Manager IP field changed to text (supports domain names)
+  - Manager + device selections are now required fields
+  - Default dropdown items added for improved usability
+  - Connector defaults updated (code snippet connector set as default)
+- Export enhancements:
+  - Version bump and export template updates/additions
+- Connector behavior improvements:
+  - Ensure connector creation sets verbose JSON = true
+- Internal cleanup / improvements:
+  - Convert set → list where required to improve compatibility with code snippet
+
 Release of 1.0.8
 - Add 7.6.2 compatibility with playbook origin and editable flag support
 - Add new playbook to unlock all playbooks in the ZTP solution pack
