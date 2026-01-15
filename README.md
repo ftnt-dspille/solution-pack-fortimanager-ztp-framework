@@ -1,11 +1,11 @@
 # Release Information
 
- * **Version**: 1.0.7
+ * **Version**: 1.1.0
  * **Certified**: No
  * **Publisher**: Fortinet CSE
  * **Contributor**: James Hilving
  * **Compatible Version**: 
-   * FortiSOAR v7.4.0 and later
+   * FortiSOAR v7.6.5 and later
    * FortiManager v7.2.0 and later for full features. Limited features for earlier FortiManager versions. 
  * [Release Notes](./release_notes.md) 
  * [Changelog](./docs/changelog.md)
